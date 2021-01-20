@@ -19,19 +19,19 @@ export default function Home() {
           Coming soon
         </h1>
 
-        <p className={styles.description}>
-          Pioneers in Cambodian esports.
+        <p className={styles.description} style={{margin: `2.5vmin 0`}}>
+          Pioneers in Cambodian esports
         </p>
 
         <span>
             <a href="https://www.facebook.com/yeaksa.official">
-              <img src="/fb_result.png" alt="Facebook" className={styles.logo} style={{margin: `0 0.75vmax`}} />
+              <img src="/fb_result.png" alt="Facebook" style={{margin: `0 0.75vmax`, width: `3.75vmax`}} />
             </a>
             <a href="https://www.instagram.com/yeaksa.esports/">
-              <img src="/ig_result.png" alt="Instagram" className={styles.logo} style={{margin: `0 0.75vmax`}} />
+              <img src="/ig_result.png" alt="Instagram" style={{margin: `0 0.75vmax`, width: `3.75vmax`}} />
             </a>
             <a href="https://www.youtube.com/channel/UCXeZPlbx0ncbnYijLtFkZgQ">
-              <img src="/yt_result.png" alt="YouTube" className={styles.logo} style={{margin: `0 0.75vmax`}} />
+              <img src="/yt_result.png" alt="YouTube" style={{margin: `0 0.75vmax`, width: `3.75vmax`}} />
             </a>
           </span>
 

@@ -32,7 +32,7 @@
 }
 
 .main {
-  padding: 5rem 0;
+  padding: 4.25vh 0;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -116,6 +116,15 @@
           animation-delay: 1.2s;
 }
 
+@-webkit-keyframes sponsor-popup {
+  0% {
+    margin-top: 5vh;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
 @keyframes sponsor-popup {
   0% {
     margin-top: 5vh;
@@ -127,10 +136,10 @@
 
 @-webkit-keyframes sponsor-popup {
   0% {
-    margin-top: 5vh;
+    margin-right: 5vw;
   }
   100% {
-    margin-top: 0;
+    margin-right: 0;
   }
 }
 
@@ -144,15 +153,6 @@
 }
 
 @keyframes powered-by-popup {
-  0% {
-    margin-right: 5vw;
-  }
-  100% {
-    margin-right: 0;
-  }
-}
-
-@-webkit-keyframes sponsor-popup {
   0% {
     margin-right: 5vw;
   }
@@ -280,7 +280,7 @@
 }
 
 .logo {
-  height: 3.25em;
+  height: 5.75em;
 }
 
 @media (max-width: 600px) {
