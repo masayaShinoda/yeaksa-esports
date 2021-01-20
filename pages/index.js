@@ -14,6 +14,7 @@ export default function Home() {
       <div className={styles.background}></div>
 
       <main className={styles.main}>
+        <img src="/yeaksa-no-bg@4x.png" style={{width: `15vmax`, marginBottom: `4.25vh`}}></img>
         <h1 className={styles.title}>
           Coming soon
         </h1>
