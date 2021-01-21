@@ -19,7 +19,7 @@
     position: fixed;
     top: 0;
     left: 0;
-  background: url("/yeaksa-bg-02_result_result.jpg");
+    background: url("/yeaksa-bg-02_result_result.jpg");
     // /* Add the blur effect */
     // filter: blur(4px);
     // -webkit-filter: blur(4px);
@@ -193,6 +193,12 @@
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
   }
+  @media (max-width: $mobile-bp) {
+    .title {
+      font-size: 6.25rem;
+    }
+  }
+
   @keyframes title-drop {
     0% {
       opacity: 0;
@@ -268,6 +274,9 @@
     .grid {
       width: 100%;
       flex-direction: column;
+    }
+    .logo {
+      height: 4.25em;
     }
   }
   
