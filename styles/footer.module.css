@@ -84,8 +84,7 @@
             flex-direction: column;
   }
   .copyrightContainer {
-    margin: 2.5vmin 0;
-    padding-bottom: 2.5vmax;
+    padding: 2.5vmax 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
