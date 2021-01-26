@@ -69,10 +69,12 @@
     }
     .sponsorsContainer {
         align-items: center;
-        display: none;
+        display: flex;
         justify-content: center;
         padding: 2.5vmax 0;
-
+        p {
+            display: none;
+        }
     }
     .copyrightContainer {
         
