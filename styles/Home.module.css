@@ -34,6 +34,9 @@
   .container {
     padding: 12vh 0;
   }
+  .background {
+    background-position: top;
+  }
 }
 
 .main {
