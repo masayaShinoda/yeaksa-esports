@@ -96,9 +96,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
