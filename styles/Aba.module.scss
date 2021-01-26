@@ -39,3 +39,14 @@
         max-height: 1.75rem;
     }
 }
+
+@media (max-width: $mobile-bp) {
+    .abaContainer {
+        .div1 {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+}

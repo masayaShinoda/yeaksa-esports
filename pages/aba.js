@@ -19,7 +19,7 @@ export default function Aba() {
 
                 <main className={styles.main}>
                     <div className={abaStyles.abaContainer}>
-                        <div style={{display: `flex`, gap: `2.5vmax`}}>
+                        <div className={abaStyles.div1} style={{display: `flex`, gap: `2.5vmax`}}>
                             <img src="/icons/aba.jpg" alt="aba"/>
                             <span>
                                 <h1>Transfer to:</h1>
