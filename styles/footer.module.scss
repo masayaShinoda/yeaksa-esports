@@ -68,22 +68,17 @@
         flex-direction: column;
     }
     .sponsorsContainer {
-        align-items: center;
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
         padding: 2.5vmax 0;
-        p {
-            display: none;
-        }
+
     }
     .copyrightContainer {
         
         display: flex;
-        flex-direction: row !important;
         padding: 2.5vmax 0;
-        p {
-            display: inline;
-        }
     }
 }
 

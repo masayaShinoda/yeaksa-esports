@@ -8,15 +8,17 @@ export default function Footer() {
                 <p>
                     Proudly sponsored by
                 </p>
-                <a href="https://www.facebook.com/fansportstore">
-                <img src="/sponsors/Logo-Fan-Sport-png - Copy.png" alt="Fan Sport" className={styles.sponsorLogo} />
-                </a>
-                <a href="https://www.facebook.com/Good-Time-Hotel-Resort-Group-106046934410922">
-                <img src="/sponsors/GoodTimeGroup_White_Logo.png" alt="Good Time Group" className={styles.sponsorLogo} />
-                </a>
-                <a href="https://www.facebook.com/BEES-FC-111744477257357">
-                <img src="/sponsors/bees-logo.png" alt="Bees FC" className={styles.sponsorLogo} />
-                </a>
+                <div style={{display: `flex`}}>
+                  <a href="https://www.facebook.com/fansportstore">
+                  <img src="/sponsors/Logo-Fan-Sport-png - Copy.png" alt="Fan Sport" className={styles.sponsorLogo} />
+                  </a>
+                  <a href="https://www.facebook.com/Good-Time-Hotel-Resort-Group-106046934410922">
+                  <img src="/sponsors/GoodTimeGroup_White_Logo.png" alt="Good Time Group" className={styles.sponsorLogo} />
+                  </a>
+                  <a href="https://www.facebook.com/BEES-FC-111744477257357">
+                  <img src="/sponsors/bees-logo.png" alt="Bees FC" className={styles.sponsorLogo} />
+                  </a>
+                </div>
               </div>
 
           </span>
