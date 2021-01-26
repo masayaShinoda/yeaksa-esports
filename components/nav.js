@@ -32,7 +32,7 @@ export default function Nav() {
             <nav>
                 <a href="/">Home</a>
                 <span className={styles.navDropDown}>
-                    <a style={{display: `inline-block`, marginRight: `-1.5vmax`}} href="/roster">Roster</a>
+                    <a style={{display: `inline-block`}} href="/roster">Roster</a>
                     <ul className={styles.dropDown}>
                         <li>
                             <a href="/roster-csgo">CS:GO</a>                            

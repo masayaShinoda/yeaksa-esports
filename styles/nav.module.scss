@@ -124,6 +124,9 @@
             .navDropDown {
                 padding-top: 0 !important;
                 padding-bottom: 0 !important;
+                a {
+                    margin-right: -1.5vmax;
+                }
                 .dropDown {
                     display: none;
                 }
