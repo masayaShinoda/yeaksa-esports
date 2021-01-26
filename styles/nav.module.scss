@@ -107,6 +107,7 @@
     }
     .navContainer {
         display: none;
+        background: none;
         nav {
             display: flex;
             flex-direction: column;
@@ -122,19 +123,14 @@
             }
             .navDropDown {
                 .dropDown {
-                    align-items: flex-start;
-                    margin-top: 0;
-                    width: 100%;
-                    position: relative;
-                    margin: 0;
-                    li {
-                       padding: 2.5vmax 1.5vmax;
-                       width: 100%; 
-                    }
+                    display: none;
                 }
             }
             .navDropDown:hover {
                 padding: 2.5vmax 1.5vmax;
+            }
+            .navDropDown:active .dropdown, .navDropDown:hover .dropDown, .navDropDown:focus .dropDown {
+                display: none;
             }
         }
     }

@@ -131,6 +131,7 @@
   }
   .navContainer {
     display: none;
+    background: none;
   }
   .navContainer nav {
     display: -webkit-box;
@@ -151,20 +152,13 @@
     min-width: 65vw;
   }
   .navContainer nav .navDropDown .dropDown {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin-top: 0;
-    width: 100%;
-    position: relative;
-    margin: 0;
-  }
-  .navContainer nav .navDropDown .dropDown li {
-    padding: 2.5vmax 1.5vmax;
-    width: 100%;
+    display: none;
   }
   .navContainer nav .navDropDown:hover {
     padding: 2.5vmax 1.5vmax;
+  }
+  .navContainer nav .navDropDown:active .dropdown, .navContainer nav .navDropDown:hover .dropDown, .navContainer nav .navDropDown:focus .dropDown {
+    display: none;
   }
 }
 /*# sourceMappingURL=nav.module.css.map */
