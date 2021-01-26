@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap");
+.abaContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3.25vmax;
+  padding: 2.5vh 10vw;
+}
+
+.abaContainer img {
+  min-width: 150px;
+  min-height: 150px;
+  max-width: 12.5vmax;
+  max-height: 12.5vmax;
+}
+
+.abaContainer h1 {
+  margin: 0;
+}
+
+.abaContainer p {
+  font-size: 1.25rem;
+}
+
+.abaContainer .fbLink {
+  background: #212121;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.abaContainer .fbLink:hover {
+  background: #ececec;
+}
+
+.abaContainer .fbLink:hover h2, .abaContainer .fbLink:hover p {
+  color: #212121;
+}
+
+.abaContainer .fb {
+  margin-right: 1.75vmax;
+  min-width: 1.75rem;
+  min-height: 1.75rem;
+  max-width: 1.75rem;
+  max-height: 1.75rem;
+}
+/*# sourceMappingURL=Aba.module.css.map */

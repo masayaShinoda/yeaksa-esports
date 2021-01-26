@@ -1,3 +1,5 @@
+@import "./_variables.scss";
+
 * {
   box-sizing: border-box
 }
@@ -20,4 +22,14 @@ a {
 
 div, span, p, a, h1, h2, h3 {
   color: #fcfcfc;
+}
+
+h1, h2 {
+  font-family: $head;
+}
+h1 {
+  font-size: 3.25rem;
+}
+p {
+  font-family: $body; 
 }

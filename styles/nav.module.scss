@@ -1,0 +1,152 @@
+@import "./_variables.scss";
+
+.navParent {
+    width: 100%;
+}
+//on desktop nav button hidden
+.openNavBtn, .closeNavBtn {
+    display: none;
+}
+.navContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2.5vh 10vw; 
+    background: rgba(0,0,0,.425);
+    .logo {
+        width: 15vmin;
+    }
+    nav {        
+        a {
+            font-family: $head;
+            font-size: 1.75rem;
+            margin: 0 1.1vw;
+            transition: .2s ease-in;            
+        }
+        a:hover {
+            color: #999;
+        }
+        .navDropDown {
+            padding: 0;
+            // border: 1px solid red; //debug
+            .dropDown {
+                display: none; //hidden by default
+                padding: .5vmax ;
+                margin-top: -.25vmax;
+                position: absolute;
+                width: fit-content;
+                flex-direction: column;
+                align-items: flex-end;
+                // border: 1px solid green; //debug
+                list-style-type: none;          
+                background: rgba(0,0,0,.625);
+                li:hover {
+                    background: rgba(245,245,245,.625);
+                    a {
+                        color: #212121;
+                    }
+                }
+            }
+        }
+        .navDropDown:hover {
+            padding-bottom: 2.5vmax;
+            // border: 1px solid blue; //debug
+        }
+        .navDropDown:hover .dropDown {
+            display: flex;
+        }
+    }
+}
+@media (max-width: $mobile-bp) {
+    .logoBtn {
+        display: none;
+    }
+    // .openNavBtn {
+    //     display: flex;
+    //     width: 8vmax;
+    //     height: 8vmax;
+    //     border-radius: 100%;
+    //     border: 0;
+    //     position: fixed;
+    //     top: 5vh;
+    //     left: 10vw;
+    //     background: #BC0000;
+    // }
+    .openNavBtn, .closeNavBtn {   
+        position: fixed;
+        top: 5vh;
+        left: 10vw;
+        color: #fcfcfc;
+        font-size: 1.2rem;
+        width: 9.375vmax; 
+        height: 9.375vmax;
+        border-radius: 100%;
+        background: #BC0000;
+
+        border: 0;
+        span {
+            display: block;
+            margin: 10% auto;
+            width: 3.75vmax;
+            height: 0.375vmax;
+            border-radius: 0.5vmax;
+            background: #fcfcfc;
+        }
+    }
+    .openNavBtn {
+        display: block;
+    }
+    .closeNavBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 1px solid red; //debug
+        div {
+            // position: fixed;
+            // border: 1px solid blue; //debug
+            span {
+                display: block;
+                margin: 0 auto;
+                transform:  rotate(45deg);                
+            }
+            span:nth-of-type(2n) {            
+                background: #fcfcfc;
+                transform: translateY(-0.25vmax) rotate(135deg);    
+            }
+        }
+    }
+    .navContainer {
+        display: none;
+        nav {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 12.5vh;
+            background: #212121;
+            padding-left: 2.5vmax;
+            a, .navDropDown{
+                padding: 2.5vmax 1.5vmax;
+                margin-left: -1.5vmax;
+                // border: 1px solid red; //debug
+                min-width: 65vw;
+            }
+            .navDropDown {
+                .dropDown {
+                    align-items: flex-start;
+                    margin-top: 0;
+                    width: 100%;
+                    position: relative;
+                    margin: 0;
+                    li {
+                       padding: 2.5vmax 1.5vmax;
+                       width: 100%; 
+                    }
+                }
+            }
+            .navDropDown:hover {
+                padding: 2.5vmax 1.5vmax;
+            }
+        }
+    }
+}

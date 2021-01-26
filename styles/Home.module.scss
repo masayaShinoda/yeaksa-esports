@@ -2,7 +2,7 @@
 
   .container {
     min-height: 100vh;
-    padding: 0 0.5rem;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,9 +20,9 @@
     top: 0;
     left: 0;
     background: url("/yeaksa-bg-02_result_result.jpg");
-    // /* Add the blur effect */
-    // filter: blur(4px);
-    // -webkit-filter: blur(4px);
+    // Add the blur effect 
+    // filter: blur(2px);
+    // -webkit-filter: blur(2px);
     
   }
 
@@ -31,140 +31,6 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer {
-    width: 100%;
-    height: 100px;
-    // border-top: 1px solid #eaeaea;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    span {
-      display: flex;
-    }
-  }
-  
-  // @media (max-width: $mobile-bp) {
-  //   .footer {
-  //     flex-wrap: wrap;
-  //   }
-  // }
-  
-  .footer img {
-    margin-left: 0.5rem;
-    margin-top: 5vh;
-  }
-
-  .footer {
-    p {
-      -webkit-animation:sponsor-popup .8s;
-      -moz-animation:sponsor-popup .8s;
-      -o-animation:sponsor-popup .8s;
-      animation: powered-by-popup 1.6s;
-      animation-fill-mode: forwards;
-    }
-    img:first-of-type {
-      -webkit-animation:sponsor-popup .8s;
-      -moz-animation:sponsor-popup .8s;
-      -o-animation:sponsor-popup .8s;
-      // border: 1px solid red; //debuig
-      animation: sponsor-popup .8s;
-      animation-fill-mode: forwards;
-      animation-delay: .4s;
-    }
-    img:nth-of-type(2) {
-      -webkit-animation:sponsor-popup .8s;
-      -moz-animation:sponsor-popup .8s;
-      -o-animation:sponsor-popup .8s;
-      animation: sponsor-popup .8s;      
-      animation-fill-mode: forwards;
-      animation-delay: .8s;
-    }
-    img:nth-of-type(3) {
-      -webkit-animation:sponsor-popup .8s;
-      -moz-animation:sponsor-popup .8s;
-      -o-animation:sponsor-popup .8s;
-      animation: sponsor-popup .8s;      
-      animation-fill-mode: forwards;
-      animation-delay: 1.2s;
-    }
-
-    @-webkit-keyframes sponsor-popup {
-      0% {
-        margin-top: 5vh;
-      }
-      100% {
-        margin-top: 0;
-      }
-    }
-    @-moz-keyframes sponsor-popup {
-      0% {
-        margin-top: 5vh;
-      }
-      100% {
-        margin-top: 0;
-      }
-    }
-    @-o-keyframes sponsor-popup {
-      0% {
-        margin-top: 5vh;
-      }
-      100% {
-        margin-top: 0;
-      }
-    }
-    @keyframes sponsor-popup {
-
-      0% {
-        margin-top: 5vh;
-      }
-      100% {
-        margin-top: 0;
-      }
-    }
-
-    @-webkit-keyframes sponsor-popup {
-      0% {
-        margin-right: 5vw;
-      }
-      100% {
-        margin-right: 0;
-      }
-    }
-    @-moz-keyframes sponsor-popup {
-      0% {
-        margin-right: 5vw;
-      }
-      100% {
-        margin-right: 0;
-      }
-    }
-    @-o-keyframes sponsor-popup {
-      0% {
-        margin-right: 5vw;
-      }
-      100% {
-        margin-right: 0;
-      }
-    }
-    @keyframes powered-by-popup {
-      0% {
-        margin-right: 5vw;
-      }
-      100% {
-        margin-right: 0;
-      }
-    }
-  }
-  
-  .footer a {
-    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -233,19 +99,28 @@
     justify-content: center;
     flex-wrap: wrap;
     max-width: 800px;
-    margin-top: 3rem;
+    // margin-top: 3rem;
   }
   
   .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 27.5vmin;    
     margin: 1rem;
     flex-basis: 45%;
-    padding: 1.5rem;
+    padding: 2.5rem;
     text-align: left;
     color: inherit;
     text-decoration: none;
     border: 1px solid #eaeaea;
     border-radius: 10px;
     transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  @media (max-width: $mobile-bp) {
+    .card {
+      width: 80%;
+    }
   }
   
   .card:hover,
@@ -256,8 +131,10 @@
   }
   
   .card h3 {
-    margin: 0 0 1rem 0;
+    margin: 1rem;
     font-size: 1.5rem;
+    color: #fcfcfc;
+    text-shadow: 1px 2px 5px rgba(45,45,45,.8);
   }
   
   .card p {
@@ -265,7 +142,7 @@
     font-size: 1.25rem;
     line-height: 1.5;
   }
-  
+
   .logo {
     height: 5.75em;
   }
@@ -281,5 +158,8 @@
   }
   
   .social {
-    border: 1px solid red; //debug
+    // border: 1px solid red; //debug
   }
+
+
+

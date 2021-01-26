@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap");
+.navParent {
+  width: 100%;
+}
+
+.openNavBtn, .closeNavBtn {
+  display: none;
+}
+
+.navContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 2.5vh 10vw;
+  background: rgba(0, 0, 0, 0.425);
+}
+
+.navContainer .logo {
+  width: 15vmin;
+}
+
+.navContainer nav a {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.75rem;
+  margin: 0 1.1vw;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+
+.navContainer nav a:hover {
+  color: #999;
+}
+
+.navContainer nav .navDropDown {
+  padding: 0;
+}
+
+.navContainer nav .navDropDown .dropDown {
+  display: none;
+  padding: .5vmax;
+  margin-top: -.25vmax;
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  list-style-type: none;
+  background: rgba(0, 0, 0, 0.625);
+}
+
+.navContainer nav .navDropDown .dropDown li:hover {
+  background: rgba(245, 245, 245, 0.625);
+}
+
+.navContainer nav .navDropDown .dropDown li:hover a {
+  color: #212121;
+}
+
+.navContainer nav .navDropDown:hover {
+  padding-bottom: 2.5vmax;
+}
+
+.navContainer nav .navDropDown:hover .dropDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 480px) {
+  .logoBtn {
+    display: none;
+  }
+  .openNavBtn, .closeNavBtn {
+    position: fixed;
+    top: 5vh;
+    left: 10vw;
+    color: #fcfcfc;
+    font-size: 1.2rem;
+    width: 9.375vmax;
+    height: 9.375vmax;
+    border-radius: 100%;
+    background: #BC0000;
+    border: 0;
+  }
+  .openNavBtn span, .closeNavBtn span {
+    display: block;
+    margin: 10% auto;
+    width: 3.75vmax;
+    height: 0.375vmax;
+    border-radius: 0.5vmax;
+    background: #fcfcfc;
+  }
+  .openNavBtn {
+    display: block;
+  }
+  .closeNavBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .closeNavBtn div span {
+    display: block;
+    margin: 0 auto;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .closeNavBtn div span:nth-of-type(2n) {
+    background: #fcfcfc;
+    -webkit-transform: translateY(-0.25vmax) rotate(135deg);
+            transform: translateY(-0.25vmax) rotate(135deg);
+  }
+  .navContainer {
+    display: none;
+  }
+  .navContainer nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    top: 12.5vh;
+    background: #212121;
+    padding-left: 2.5vmax;
+  }
+  .navContainer nav a, .navContainer nav .navDropDown {
+    padding: 2.5vmax 1.5vmax;
+    margin-left: -1.5vmax;
+    min-width: 65vw;
+  }
+  .navContainer nav .navDropDown .dropDown {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 0;
+    width: 100%;
+    position: relative;
+    margin: 0;
+  }
+  .navContainer nav .navDropDown .dropDown li {
+    padding: 2.5vmax 1.5vmax;
+    width: 100%;
+  }
+  .navContainer nav .navDropDown:hover {
+    padding: 2.5vmax 1.5vmax;
+  }
+}
+/*# sourceMappingURL=nav.module.css.map */
