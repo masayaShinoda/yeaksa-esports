@@ -23,6 +23,11 @@
     align-items: center;
   }
   
+  .sponsorsContainer {
+    display: flex;
+    align-items: center;
+}
+  
   // @media (max-width: $mobile-bp) {
   //   .footer {
   //     flex-wrap: wrap;
@@ -61,6 +66,13 @@
 @media (max-width: $mobile-bp) {
     .footer {
         flex-direction: column;
+    }
+    .sponsorsContainer {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 2.5vmax 0;
+
     }
     .copyrightContainer {
         

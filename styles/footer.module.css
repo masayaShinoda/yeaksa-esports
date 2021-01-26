@@ -39,6 +39,15 @@
           align-items: center;
 }
 
+.sponsorsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .footer .copyrightContainer {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -82,6 +91,18 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .sponsorsContainer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2.5vmax 0;
   }
   .copyrightContainer {
     padding: 2.5vmax 0;

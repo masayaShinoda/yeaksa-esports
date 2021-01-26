@@ -4,10 +4,10 @@ export default function Footer() {
     return (        
       <footer className={styles.footer}>
           <span>
-            <p>
-                Proudly sponsored by
-            </p>
               <div className={styles.sponsorsContainer}>
+                <p>
+                    Proudly sponsored by
+                </p>
                 <a href="https://www.facebook.com/fansportstore">
                 <img src="/sponsors/Logo-Fan-Sport-png - Copy.png" alt="Fan Sport" className={styles.sponsorLogo} />
                 </a>
