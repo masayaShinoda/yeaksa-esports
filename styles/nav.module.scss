@@ -122,6 +122,8 @@
                 min-width: 65vw;
             }
             .navDropDown {
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
                 .dropDown {
                     display: none;
                 }

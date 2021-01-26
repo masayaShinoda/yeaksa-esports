@@ -151,6 +151,10 @@
     margin-left: -1.5vmax;
     min-width: 65vw;
   }
+  .navContainer nav .navDropDown {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
   .navContainer nav .navDropDown .dropDown {
     display: none;
   }
