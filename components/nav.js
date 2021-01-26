@@ -32,7 +32,7 @@ export default function Nav() {
             <nav>
                 <a href="/">Home</a>
                 <span className={styles.navDropDown}>
-                    <a href="/roster">Roster</a>
+                    <a style={{cursor: `pointer`}}>Roster</a>
                     <ul className={styles.dropDown}>
                         <li>
                             <a href="/roster-csgo">CS:GO</a>                            
@@ -51,7 +51,7 @@ export default function Nav() {
                 <a href="/shop">Shop</a>    
                 {/* <a href="/">Partners</a> */}
                 <a href="/about">About</a>
-                <a href="/">Live &nbsp;&#11044;</a>        
+                <a href="/">Live &nbsp;&#11044;</a>
                               {/* if live then  &#128308; */}
             </nav>
         </div>

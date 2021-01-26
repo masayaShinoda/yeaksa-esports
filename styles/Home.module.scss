@@ -1,12 +1,12 @@
 @import "./_variables.scss";
 
   .container {
-    min-height: 100vh;
-    
+    min-height: 100vh;    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // border: 1px solid red;//debug
   }
   
   .background {
@@ -22,9 +22,14 @@
     background: url("/yeaksa-bg-02_result_result.jpg");
     // Add the blur effect 
     // filter: blur(2px);
-    // -webkit-filter: blur(2px);
-    
+    // -webkit-filter: blur(2px);    
   }
+@media (max-width: $mobile-bp) {
+  .container {
+    padding: 12vh 0;
+  }
+}
+
 
   .main {
     padding: 4.25vh 0;
@@ -120,6 +125,7 @@
   @media (max-width: $mobile-bp) {
     .card {
       width: 80%;
+      text-align: center;
     }
   }
   

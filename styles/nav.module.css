@@ -70,11 +70,11 @@
   color: #212121;
 }
 
-.navContainer nav .navDropDown:hover {
+.navContainer nav .navDropDown:active, .navContainer nav .navDropDown:hover, .navContainer nav .navDropDown:focus {
   padding-bottom: 2.5vmax;
 }
 
-.navContainer nav .navDropDown:hover .dropDown {
+.navContainer nav .navDropDown:active .dropdown, .navContainer nav .navDropDown:hover .dropDown, .navContainer nav .navDropDown:focus .dropDown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -30,6 +30,12 @@
   background: url("/yeaksa-bg-02_result_result.jpg");
 }
 
+@media (max-width: 480px) {
+  .container {
+    padding: 12vh 0;
+  }
+}
+
 .main {
   padding: 4.25vh 0;
   -webkit-box-flex: 1;
@@ -156,6 +162,7 @@
 @media (max-width: 480px) {
   .card {
     width: 80%;
+    text-align: center;
   }
 }
 

@@ -49,11 +49,11 @@
                 }
             }
         }
-        .navDropDown:hover {
+        .navDropDown:active, .navDropDown:hover, .navDropDown:focus  {
             padding-bottom: 2.5vmax;
             // border: 1px solid blue; //debug
         }
-        .navDropDown:hover .dropDown {
+        .navDropDown:active .dropdown, .navDropDown:hover .dropDown, .navDropDown:focus .dropDown {
             display: flex;
         }
     }
@@ -62,17 +62,6 @@
     .logoBtn {
         display: none;
     }
-    // .openNavBtn {
-    //     display: flex;
-    //     width: 8vmax;
-    //     height: 8vmax;
-    //     border-radius: 100%;
-    //     border: 0;
-    //     position: fixed;
-    //     top: 5vh;
-    //     left: 10vw;
-    //     background: #BC0000;
-    // }
     .openNavBtn, .closeNavBtn {   
         position: fixed;
         top: 5vh;
