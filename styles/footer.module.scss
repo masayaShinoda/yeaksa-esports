@@ -67,18 +67,20 @@
   
 @media (max-width: $mobile-bp) {
     .footer {
+        
         flex-direction: column;
         
     }
     .sponsorsContainer {
-        display: block !important;
+        display: none !important;
         text-align: center !important;
         padding: 2.5vmax 0 !important;
 
     }
     .copyrightContainer {
         display: block !important;
-        padding: 2.5vmax 0 !important;
+        padding: 0 !important;
+        padding-top: 2.5vmax !important;
         text-align: center !important;
     }
 }
