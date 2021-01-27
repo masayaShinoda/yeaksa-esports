@@ -26,6 +26,7 @@
   .sponsorsContainer {
     display: flex;
     align-items: center;
+    
 }
   
   // @media (max-width: $mobile-bp) {
@@ -39,7 +40,7 @@
 .footer {
     .copyrightContainer {
         flex-direction: column;
-        // align-items: flex-end;
+        align-items: flex-end;
     }
     p { //sponsored by text
         margin-right: 1.25vmax;
@@ -68,17 +69,15 @@
         flex-direction: column;
     }
     .sponsorsContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        display: block !important;
+        text-align: center;
         padding: 2.5vmax 0;
 
     }
     .copyrightContainer {
-        
-        display: flex;
+        display: block !important;
         padding: 2.5vmax 0;
+        text-align: center;
     }
 }
 

@@ -3,12 +3,17 @@
 //individual game roster page i.e. csgo roster
   .upperContent {
     display: flex;
-    width: 100vw;
+    justify-content: space-evenly;
+    width: 100%;
     padding: 2.5vh 10vw;
+    p {
+      margin: 0 auto;
+    }
     // border: 1px solid red; //debug
+    
   }
   .content {
-    width: 100vw;
+    // width: 100vw;
     padding: 2.5vh 10vw;
     // border: 1px solid green; //debug
 
@@ -41,21 +46,27 @@
   }
 
   @media (max-width: $tablet-bp) {
+  .upperContent {
+    flex-direction: column;
+    align-items: flex-start;  
+  }
     .content {
-      width: 100vw;
+      width: 100%;
+
       display: flex;
       flex-direction: column;
       align-items: center;
       
       padding: 2.5vh 10vw;
       // border: 1px solid green; //debug
-      background: rgba(0,0,0,.425);
+      // background: rgba(0,0,0,.425);
   
     }
     .playerCard {
       display: flex;
       justify-content: center;
       padding: 2.5vmax 0;
+      width: 100%;
       // border: 1px solid blue; //debug
     }
     .avatar {
@@ -85,10 +96,12 @@
 
   @media (max-width: $mobile-bp) {
     .upperContent {
-      margin-top: 12.5vmax;
+      // margin-top: 12.5vmax;
       align-items: center;
-      padding: 0 1.25vmax;
+      
+      padding: 0 10vw;
       // border: 1px solid red; //debug
+      text-align: center;
     }
     .content {
       width: 100vw;

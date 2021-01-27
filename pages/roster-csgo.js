@@ -84,7 +84,7 @@ export default function rosterCsgo() {
                     </h2>
                 </a>
                 <p 
-                    style={{margin: `0 auto`, fontSize: `2.25rem`, fontWeight: 700,}}
+                    style={{margin: `0`, fontSize: `2.25rem`, fontWeight: 700,}}
                 >
                     Counter-Strike Global Offensive
                 </p>

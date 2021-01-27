@@ -4,12 +4,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
   padding: 2.5vh 10vw;
 }
 
+.upperContent p {
+  margin: 0 auto;
+}
+
 .content {
-  width: 100vw;
   padding: 2.5vh 10vw;
 }
 
@@ -40,8 +46,17 @@
 }
 
 @media (max-width: 1023px) {
+  .upperContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .content {
-    width: 100vw;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -53,7 +68,6 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 2.5vh 10vw;
-    background: rgba(0, 0, 0, 0.425);
   }
   .playerCard {
     display: -webkit-box;
@@ -63,6 +77,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     padding: 2.5vmax 0;
+    width: 100%;
   }
   .avatar {
     margin: 0 2.5vmin;
@@ -83,11 +98,11 @@
 
 @media (max-width: 480px) {
   .upperContent {
-    margin-top: 12.5vmax;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0 1.25vmax;
+    padding: 0 10vw;
+    text-align: center;
   }
   .content {
     width: 100vw;
