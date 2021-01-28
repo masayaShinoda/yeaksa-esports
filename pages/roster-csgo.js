@@ -9,23 +9,6 @@ export default function rosterCsgo() {
     const csgoData = []
     const token = '7d75f2d5a1e12e28d4ee89f229cdc5';
 
-    // .then(res => res.json())
-    // .then((res) => {
-    //     // console.log(res.data["allCsgos"])
-    //     var i;
-    //     for (i = 0; i < res.data["allCsgos"].length; i++) {
-    //         csgoData.push(res.data["allCsgos"][i])               
-    //     } 
-    //     var x;
-    //     for (x = 0; x < csgoData.length; x++) {
-    //         console.log(csgoData[x])
-    //     }
-        
-    // })
-    // .catch((error) => {
-    //     console.log(error);
-    // });
-
     const [playerData, setPlayerData] = useState((playerData) => {return null}); // by default there is no player data
 
     

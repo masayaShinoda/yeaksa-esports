@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import styles from "../styles/nav.module.css"
 
 export default function Nav() {
@@ -11,7 +12,41 @@ export default function Nav() {
         document.getElementById("closeNavBtn").style.display = "none"
         document.getElementById("openNavBtn").style.display = "block"
     }
+    const token = '7d75f2d5a1e12e28d4ee89f229cdc5';
+    const [liveData, setLiveData] = useState({}); // by default there is no live data
 
+    useEffect(() => {
+        fetch(
+            'https://graphql.datocms.com/',
+            {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'Authorization': `Bearer ${token}`,
+              },
+              body: JSON.stringify({
+                query: `{ 
+                    allLives {
+                        liveStatus
+                        link
+                        id
+                      }
+                  }`
+              }),
+            }
+        )
+        .then(res => res.json())
+        .then((res) => {
+            setLiveData(res.data.allLives[0])            
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+         
+    }, [])
+        
+    
     return (
         <div className={styles.navParent}>
             <button id="openNavBtn" onClick={openNav} className={styles.openNavBtn}>
@@ -48,8 +83,9 @@ export default function Nav() {
                 <a href="/shop">Shop</a>    
                 {/* <a href="/">Partners</a> */}
                 <a href="/about">About</a>
-                <a href="/">Live &nbsp;&#11044;</a>
-                              {/* if live then  &#128308; */}
+                {liveData.liveStatus &&
+                 <a href={liveData.link}>Live &#128308;</a> 
+                }
             </nav>
         </div>
         </div>
