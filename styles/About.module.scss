@@ -34,7 +34,9 @@
             margin-bottom: 1.75rem;
         }
         a {            
-            background: rgba(45,45,45,.75);
+            // background: rgba(45,45,45,.75);
+            background: #212121;
+            
             padding: .75rem;
             border-radius: 1.25vmax;
             transition: .2s ease-in;
@@ -59,9 +61,11 @@
             display: flex;
             width: fit-content;
             margin: 1.1rem 0;            
-            background: rgba(45,45,45,.75);
+            // background: rgba(45,45,45,.75);
+            background: #212121;
             padding: 0 1.75vmax;
             border-radius: 25px;
+            transition: .2s ease-in-out;
             img {
                 margin-right: 0.75vmax;
                 width: 2.5vmax !important; 
@@ -75,7 +79,6 @@
         }
     }
 }
-
 .sponsorLogosContainer { 
     display: flex;
     align-items: center;
