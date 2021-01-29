@@ -33,6 +33,11 @@
       flex-basis: 50%;
 }
 
+.aboutContainer .div3 {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
 .aboutContainer .div3 h1 {
   margin-bottom: 1.75rem;
 }
@@ -63,6 +68,32 @@
 
 .aboutContainer .div3 .details p {
   margin: .5rem 0;
+}
+
+.aboutContainer .div4 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1.1rem 0;
+  background: rgba(45, 45, 45, 0.75);
+  padding: 0 1.75vmax;
+  border-radius: 25px;
+}
+
+.aboutContainer .div4 a img {
+  margin-right: 0.75vmax;
+  width: 2.5vmax !important;
+}
+
+.aboutContainer .div4 a:hover {
+  background: #ececec;
+}
+
+.aboutContainer .div4 a:hover p {
+  color: #212121;
 }
 
 .sponsorLogosContainer {

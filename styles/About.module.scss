@@ -26,8 +26,10 @@
       flex-basis: 50%;
 
     }
-    //contact us
+
+    // div 3 = contact us
     .div3 {
+        flex-basis: 40%;
         h1 {
             margin-bottom: 1.75rem;
         }
@@ -49,6 +51,27 @@
                 margin: .5rem 0;
             }
             // border: 1px solid red; //debug
+        }
+    }
+    .div4 {
+        //social media container
+        a {
+            display: flex;
+            width: fit-content;
+            margin: 1.1rem 0;            
+            background: rgba(45,45,45,.75);
+            padding: 0 1.75vmax;
+            border-radius: 25px;
+            img {
+                margin-right: 0.75vmax;
+                width: 2.5vmax !important; 
+            }
+        }
+        a:hover {
+            background: #ececec;
+            p {
+                color: #212121;
+            }
         }
     }
 }

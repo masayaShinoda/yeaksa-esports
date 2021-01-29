@@ -57,6 +57,25 @@ export default function About() {
                                 <p><b>Developer:</b> Masaya</p>
                             </span>
                         </div>
+                        <div className={aboutStyles.div4}>
+                            <h1>Social Media</h1>
+                            <span>
+                                <a 
+                                    href="facebook.com/yeaksa.official"
+                                    style={{display: `flex`, alignItems: `center`}}
+                                    >
+                                    <img src="./fb_result.png" alt="Facebook" />
+                                    <p>yeaksa.esports</p>
+                                </a>
+                                <a 
+                                    href="facebook.com/yeaksa.official"
+                                    style={{display: `flex`, alignItems: `center`}}
+                                    >
+                                    <img src="./ig_result.png" alt="Instagram" />
+                                    <p>@yeaksa.official</p>
+                                </a>
+                            </span>
+                        </div>
 
                     </div>
                 </main>
