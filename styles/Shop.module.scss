@@ -26,7 +26,6 @@
         .buyBtn {
             display: flex;
             flex-direction: row;
-
             background: #005E7A;
             cursor: pointer;
             align-items: center;
@@ -45,7 +44,7 @@
                 }
             }
             
-        }   
+        }
         .buyBtn:hover {
             box-shadow: 1px 1px 5px rgba(150,150,150,.75);
         }
@@ -102,17 +101,17 @@
                 background: #005E7A;
                 cursor: pointer;
                 align-items: center;
-                gap: .5vmax;
-                padding: .25vmax .75vmax;
-                border-radius: 1.25vmax;
+                gap: 2.5vmax;
+                padding: .5vmax 1.25vmax;
+                border-radius: 2.5vmax;
                 transition: .2s ease-in-out;                
                 a {
                     .icon {
-                        max-width: 3.25vmax !important;
+                        max-width: 6.25vmax !important;
 
                     }
                     h2 {
-                        font-size: 1.1rem; margin: 0; padding: 0 .5vmax; border-left: 1px solid #fcfcfc;
+                        font-size: 1.25rem; margin: 0; padding: 0 .5vmax; border-left: 1px solid #fcfcfc;
                     }
                 }
                 
