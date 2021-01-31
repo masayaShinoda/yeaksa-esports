@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { NextSeo } from "next-seo"
 import Nav from "../components/nav.js"
 import Footer from "../components/footer.js"
 import styles from '../styles/Home.module.css'
@@ -11,11 +12,15 @@ export default function Shop() {
     return (
         <div className={styles.container}>
             <Head>
-                <title>YeakSa E-sports</title>
+                {/* <title>YeakSa E-sports</title> */}
                 {/* <link rel="icon" href="/favicon.ico" /> */}
                 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
                 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
             </Head>
+                <NextSeo
+                    title="Shop | YeakSa E-sports"
+                    description="Professional esports organzation based in Phnom Penh, Cambodia."
+                />
             <Nav />
                 
                 <div className={styles.background}></div>
