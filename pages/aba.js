@@ -35,7 +35,7 @@ export default function Aba() {
                                 className={abaStyles.fbLink}
                                 href="https://www.facebook.com/yeaksa.official/"
                                 style={{display:`flex`, alignItems: `center`, justifyContent: `center`,
-                                padding: `.025vmin 2.5vmax`, borderRadius: `2.5vmax`
+                                padding: `.025vmin 2.5vmax`
                             }
                                 }><img className={abaStyles.fb} src="/fb_result.png" alt="YeakSa FB"/>
                             <p style={{fontWeight: 600}}>Yeaksa.official</p>

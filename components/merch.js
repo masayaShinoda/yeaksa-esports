@@ -53,7 +53,7 @@ export default function Merch() {
                             <span style={{display: `flex`, alignItems: `center`, gap: `1.25vmax`}}>
                                 <p className={shopStyles.price}>{data.price}</p>
                                 <span className={shopStyles.buyBtn}>
-                                    <a href="/aba">
+                                    <a href="/jersey-form">
                                         <img className={shopStyles.icon} src="/icons/aba.jpg" alt=""/>
                                         <h2>Buy</h2>
                                     </a>

@@ -8,34 +8,35 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 3.25vmax;
-  padding: 2.5vh 10vw;
+  padding: 0 10vw;
+  margin: 1.1rem 0;
+}
+
+.abaContainer .div1 {
+  margin-top: 1.1rem;
 }
 
 .abaContainer img {
-  min-width: 150px;
-  min-height: 150px;
-  max-width: 12.5vmax;
-  max-height: 12.5vmax;
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 6.25vmax;
+  max-height: 6.25vmax;
 }
 
-.abaContainer h1 {
+.abaContainer h1, .abaContainer h2 {
   margin: 0;
 }
 
 .abaContainer p {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
+  margin: 0.45rem 0;
 }
 
 .abaContainer .fbLink {
+  padding: .25vmax 1.5vmax;
   background: #212121;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
@@ -50,11 +51,66 @@
 }
 
 .abaContainer .fb {
-  margin-right: 1.75vmax;
+  margin-right: .5vmax;
   min-width: 1.75rem;
   min-height: 1.75rem;
   max-width: 1.75rem;
   max-height: 1.75rem;
+}
+
+.formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formContainer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.5vmax;
+  max-width: 50vw;
+}
+
+.formContainer label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25vh;
+}
+
+.formContainer select, .formContainer input {
+  padding: 1.25vmax .5vmax;
+  font-size: 1.1rem;
+}
+
+.formContainer button {
+  padding: 1.25vmax .5vmax;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  background: #212121;
+  border: 0;
+  color: #fcfcfc;
+  cursor: pointer;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.formContainer button:hover {
+  background: #ececec;
+  color: #212121;
 }
 
 @media (max-width: 480px) {
@@ -69,6 +125,9 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .formContainer form {
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=Aba.module.css.map */

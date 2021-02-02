@@ -52,7 +52,6 @@
           align-items: center;
   gap: .5vmax;
   padding: .25vmax .75vmax;
-  border-radius: 1.25vmax;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
@@ -142,7 +141,6 @@
             align-items: center;
     gap: 2.5vmax;
     padding: .5vmax 1.25vmax;
-    border-radius: 2.5vmax;
     -webkit-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
   }
