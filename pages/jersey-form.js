@@ -58,10 +58,6 @@ export default function jerseyForm() {
                                     Your Facebook/Instagram
                                     <input name="social" type="text" />
                                 </label> 
-                                <label>
-                                    Name on Jersey
-                                    <input name="name" type="text" />
-                                </label> 
                                 <div style={{display: `flex`, gap: `1.25vmax`}}>
                                     <label>
                                         Size
