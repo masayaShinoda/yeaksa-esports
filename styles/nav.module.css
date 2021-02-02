@@ -24,7 +24,8 @@
 }
 
 .navContainer .logo {
-  width: 15vmin;
+  min-width: 15vmin;
+  max-width: 15vmin;
 }
 
 .navContainer nav a {

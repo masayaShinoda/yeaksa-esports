@@ -63,6 +63,7 @@ export default function Nav() {
         <div className={styles.navContainer} id="nav">            
             <a className={styles.logoBtn} href="/">
                 <img className={styles.logo} src="/256w/logo-256.png" alt="Logo" />
+                {/* <img className={styles.logo} src="/428w/yeaksa-monochrome-06_result.png" alt="Logo" /> */}
             </a>
             <nav>
                 <a href="/">Home</a>

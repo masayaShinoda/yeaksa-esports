@@ -11,11 +11,16 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    // align-items: center;
     align-items: flex-end;
-    padding: 2.5vh 10vw; 
+    padding: 2.5vh 10vw;
+    // padding: 0 10vw;
+    // padding-top: 4.25vh;
     background: rgba(0,0,0,.425);
     .logo {
-        width: 15vmin;
+        min-width: 15vmin;
+        // max-width: 35vmin;
+        max-width: 15vmin;
     }
     nav {        
         a {
