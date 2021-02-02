@@ -55,12 +55,12 @@ export default function jerseyForm() {
                                 <input type="text" name="_replyto" />
                             </label>  */}
                                 <label>
-                                    Your Messenger/Instagram
-                                    <input type="text" />
+                                    Your Facebook/Instagram
+                                    <input name="social" type="text" />
                                 </label> 
                                 <label>
                                     Name on Jersey
-                                    <input type="text" />
+                                    <input name="name" type="text" />
                                 </label> 
                                 <div style={{display: `flex`, gap: `1.25vmax`}}>
                                     <label>
@@ -75,7 +75,7 @@ export default function jerseyForm() {
                                     </label>
                                     <label>
                                         Mobile Number
-                                        <input type="tel" />
+                                        <input name="tel" type="tel" />
                                         
                                     </label>
                                     </div>       
