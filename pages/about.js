@@ -15,9 +15,8 @@ export default function About() {
                 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
             </Head>
                 <NextSeo
-                    title="About | YeakSa E-sports"
+                    title="About | YeakSa Esports"
                     description="Professional esports organzation based in Phnom Penh, Cambodia."
-                    keywords="cambodian esports, cambodia esports, cambodia professional esports organization, esports organization in cambodia, csgo team cambodia, mlbb team cambodia, pubgm team cambodia, khmer esports organization, yeaksa gaming, yeaksa, yeaksa esports, yeaksa esports organization"
                 />
             <Nav />
                 

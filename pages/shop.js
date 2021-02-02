@@ -20,7 +20,7 @@ export default function Shop() {
                 <NextSeo
                     title="Shop | YeakSa E-sports"
                     description="Professional esports organzation based in Phnom Penh, Cambodia."
-                    keywords="cambodian esports, cambodia esports, cambodia professional esports organization, esports organization in cambodia, csgo team cambodia, mlbb team cambodia, pubgm team cambodia, khmer esports organization, yeaksa gaming, yeaksa, yeaksa esports, yeaksa esports organization"
+                    keywords="gaming merch cambodia, yeaksa merch, yeaksa gaming merchandise, yeaksa esports merch, yeaksa esports merchandise, yeaksa esports shop, yeaksa shop, yeaksa esports"
                 />
             <Nav />
                 
