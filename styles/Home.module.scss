@@ -42,7 +42,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
   }
 
@@ -170,10 +170,6 @@
   }
   
   .hexagonsContainer {
-    // display: grid;
-    // grid-template-columns: 200px 200px;
-    // grid-template-rows: 200px;
-    // grid-auto-rows: calc(200px - 28.87px/2);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -184,13 +180,10 @@
     // border: 1px solid red; //debug  
     
   }
-  @media (max-width: $mobile-bp) {
-    .hexagonsContainer {
-      flex-direction: column;
-    }
-  }
+  
+
   .hexagonWrapper:first-of-type {
-    margin-right: 5vw;
+    margin-right: 10vw;
     margin-top: 5vw;
     .hexagon:hover, .hexagon:active, .hexagon:focus {
       background: #757575;
@@ -266,3 +259,25 @@
     transform: rotateZ(-60deg);
   }
   
+  @media (max-width: $tablet-bp) {
+    .hexagonWrapper:first-of-type {
+      // margin-right: 5vw;
+      // margin-top: 5vw;
+      // margin: 0;
+
+    }
+    .hexagonWrapper:nth-of-type(2n) {
+      // margin-left: 5vw;
+      // margin-top: 5vw;
+      // margin: 0;
+
+    }
+    .hexagonWrapper:nth-of-type(3n) {
+      // margin-top: -50vh;
+    }
+  }
+  @media (max-width: $mobile-bp) {
+    .hexagonsContainer {
+      flex-direction: column;
+    }
+  }

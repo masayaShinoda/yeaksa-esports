@@ -114,7 +114,7 @@
 
 @media (max-width: 1023px) {
   .aboutContainer p {
-    max-width: 75ch;
+    max-width: 65ch;
   }
   .aboutContainer .div1, .aboutContainer .div2 {
     -ms-flex-preferred-size: 90%;
