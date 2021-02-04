@@ -25,50 +25,26 @@ export default function About() {
 
                 <main className={styles.main}>
                     <h1>Roster</h1>
-                    <div className={styles.grid}>
-                        <a 
-                            href="/roster-csgo"
-                            className={styles.card} 
-                            style={{
-                                background: `url('/images/csgo-bg.jpg')`,
-                                backgroundSize: `cover`,
-                            }}
-                        >
-                            <h3>CS:GO</h3>
-                            {/* <p>Find in-depth information about Next.js features and API.</p> */}
-                        </a>
-                        <a 
-                            href="/roster-mlbb" 
-                            className={styles.card}
-                            style={{
-                                background: `url('/images/mobilelegends.jpg')`,
-                                backgroundSize: `cover`,
-                            }}
-                        >
-                            <h3>Mobile Legends</h3>
-                            {/* <p>Learn about Next.js in an interactive course with quizzes!</p> */}
-                        </a>
-                        <a
-                            href="/roster-pubg-mobile"
-                            className={styles.card}
-                            style={{
-                                background: `url('/images/pubg.jpg')`,
-                                backgroundSize: `cover`,
-                            }}
-                        >
-                            <h3>PUBG Mobile</h3>
-                            {/* <p>Discover and deploy boilerplate example Next.js projects.</p> */}
-                        </a>
-                        {/* <a
-                            href="/roster-wildrift"
-                            className={styles.card}
-                            style={{
-                                background: `url('/images/wildrift.jpg')`,
-                                backgroundSize: `cover`,
-                            }}
-                        >
-                            <h3>Wild Rift</h3>
-                        </a> */}
+                    <div className={styles.hexagonsContainer}>
+                        <div className={styles.hexagonWrapper}>
+                            <a href="/roster-csgo" className={styles.hexagon}>
+                                <img src="/roster-icon/roster-hexagon-icon-csgo.png"></img>
+                                {/* <i className={styles.fab fa-facebook}></i> */}
+                            </a>
+                        </div>
+                        <div className={styles.hexagonWrapper}>
+                            <a href="/roster-mlbb" className={styles.hexagon}>
+                            <img src="/roster-icon/roster-hexagon-icon-mlbb.png"></img>
+
+                                {/* <i className={styles.fab fa-twitter}></i> */}
+                            </a>
+                        </div>
+                        <div className={styles.hexagonWrapper}>
+                            <a href="/roster-pubg-mobile" className={styles.hexagon}>
+                            <img src="/roster-icon/roster-hexagon-icon-pubgm.png"></img>
+                                {/* <i className={styles.fab fa-instagram}></i> */}
+                            </a>
+                        </div>
                     </div>
                 </main>
 

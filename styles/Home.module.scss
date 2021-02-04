@@ -169,9 +169,100 @@
     }
   }
   
-  .social {
-    // border: 1px solid red; //debug
+  .hexagonsContainer {
+    // display: grid;
+    // grid-template-columns: 200px 200px;
+    // grid-template-rows: 200px;
+    // grid-auto-rows: calc(200px - 28.87px/2);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2.5vh 10vw;
+    margin: 0 auto;
+    margin-top: -15vh;
+    // border: 1px solid red; //debug  
+    
+  }
+  @media (max-width: $mobile-bp) {
+    .hexagonsContainer {
+      flex-direction: column;
+    }
+  }
+  .hexagonWrapper:first-of-type {
+    margin-right: 5vw;
+    margin-top: 5vw;
+    .hexagon:hover, .hexagon:active, .hexagon:focus {
+      background: #757575;
+    }
+  }
+  .hexagonWrapper:nth-of-type(2n) {
+    // margin-left: 5vw;
+    margin-top: 5vw;
+    .hexagon {
+      background: #555555;
+    }
+    .hexagon:hover, .hexagon:active, .hexagon:focus {
+      background: #757575;
+    }
+  }
+  .hexagonWrapper:nth-of-type(3n) {
+    margin-top: -15vw;
+    .hexagon {
+      background: #444444;
+    }
+    .hexagon:hover, .hexagon:active, .hexagon:focus {
+      background: #757575;
+    }
   }
 
 
-
+  .hexagonWrapper {
+    display: flex;    
+    text-align: initial;
+    width: 25vw;    
+    height: 25vw;
+    cursor: pointer;
+  }
+  
+  .hexagon {
+    position: relative;
+    width: 46%;
+    height: 80%;
+    margin: auto;
+    color: white;
+    background: #333333;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: 0.2s;
+  }
+  
+  .hexagon img {
+    z-index: 1;
+    margin: auto;
+    max-width: 10vw;
+    color: transparent;
+    background: linear-gradient(45deg, #a58fe9, #e37682);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    position: absolute;
+    content: "";
+    background: inherit;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    transition: 0.2s;
+    transform-origin: center;
+  }
+  .hexagon:before {
+    transform: rotateZ(60deg);
+  }
+  .hexagon:after {
+    transform: rotateZ(-60deg);
+  }
+  

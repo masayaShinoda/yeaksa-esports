@@ -203,4 +203,124 @@
     height: 4.25em;
   }
 }
+
+.hexagonsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 2.5vh 10vw;
+  margin: 0 auto;
+  margin-top: -15vh;
+}
+
+@media (max-width: 480px) {
+  .hexagonsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.hexagonWrapper:first-of-type {
+  margin-right: 5vw;
+  margin-top: 5vw;
+}
+
+.hexagonWrapper:first-of-type .hexagon:hover, .hexagonWrapper:first-of-type .hexagon:active, .hexagonWrapper:first-of-type .hexagon:focus {
+  background: #757575;
+}
+
+.hexagonWrapper:nth-of-type(2n) {
+  margin-top: 5vw;
+}
+
+.hexagonWrapper:nth-of-type(2n) .hexagon {
+  background: #555555;
+}
+
+.hexagonWrapper:nth-of-type(2n) .hexagon:hover, .hexagonWrapper:nth-of-type(2n) .hexagon:active, .hexagonWrapper:nth-of-type(2n) .hexagon:focus {
+  background: #757575;
+}
+
+.hexagonWrapper:nth-of-type(3n) {
+  margin-top: -15vw;
+}
+
+.hexagonWrapper:nth-of-type(3n) .hexagon {
+  background: #444444;
+}
+
+.hexagonWrapper:nth-of-type(3n) .hexagon:hover, .hexagonWrapper:nth-of-type(3n) .hexagon:active, .hexagonWrapper:nth-of-type(3n) .hexagon:focus {
+  background: #757575;
+}
+
+.hexagonWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: initial;
+  width: 25vw;
+  height: 25vw;
+  cursor: pointer;
+}
+
+.hexagon {
+  position: relative;
+  width: 46%;
+  height: 80%;
+  margin: auto;
+  color: white;
+  background: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.hexagon img {
+  z-index: 1;
+  margin: auto;
+  max-width: 10vw;
+  color: transparent;
+  background: linear-gradient(45deg, #a58fe9, #e37682);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.hexagon:before,
+.hexagon:after {
+  position: absolute;
+  content: "";
+  background: inherit;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.hexagon:before {
+  -webkit-transform: rotateZ(60deg);
+          transform: rotateZ(60deg);
+}
+
+.hexagon:after {
+  -webkit-transform: rotateZ(-60deg);
+          transform: rotateZ(-60deg);
+}
 /*# sourceMappingURL=Home.module.css.map */
