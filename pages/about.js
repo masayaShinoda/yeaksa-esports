@@ -69,14 +69,14 @@ export default function About() {
                                     href="facebook.com/yeaksa.official"
                                     style={{display: `flex`, alignItems: `center`}}
                                     >
-                                    <img src="./fb_result.png" alt="Facebook" />
+                                    <img src="./fb-clear.png" alt="Facebook" />
                                     <p>yeaksa.esports</p>
                                 </a>
                                 <a 
                                     href="facebook.com/yeaksa.official"
                                     style={{display: `flex`, alignItems: `center`}}
                                     >
-                                    <img src="./ig_result.png" alt="Instagram" />
+                                    <img src="./ig-clear.png" alt="Instagram" />
                                     <p>@yeaksa.official</p>
                                 </a>
                             </span>

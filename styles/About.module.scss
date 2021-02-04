@@ -62,8 +62,8 @@
             width: fit-content;
             margin: 1.1rem 0;            
             // background: rgba(45,45,45,.75);
-            background: #212121;
-            padding: 0 1.75vmax;
+            // background: #212121;
+            // padding: 0 1.75vmax;
             // border-radius: 25px;
             transition: .2s ease-in-out;
             img {
@@ -72,9 +72,10 @@
             }
         }
         a:hover {
-            background: #ececec;
+            // background: #ececec;
             p {
-                color: #212121;
+                // color: #212121;
+                // outline: 2px solid #fcfcfc;
             }
         }
     }

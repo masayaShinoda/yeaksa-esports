@@ -77,8 +77,6 @@
   width: -moz-fit-content;
   width: fit-content;
   margin: 1.1rem 0;
-  background: #212121;
-  padding: 0 1.75vmax;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
@@ -86,14 +84,6 @@
 .aboutContainer .div4 a img {
   margin-right: 0.75vmax;
   width: 2.5vmax !important;
-}
-
-.aboutContainer .div4 a:hover {
-  background: #ececec;
-}
-
-.aboutContainer .div4 a:hover p {
-  color: #212121;
 }
 
 .sponsorLogosContainer {
