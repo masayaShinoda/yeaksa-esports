@@ -20,12 +20,7 @@
     background-size: cover;
     position: fixed;
     top: 0;
-    left: 0;
-    // background: url("/yeaksa-bg-02_result_result.jpg");
-    // background: #131313;
-    // Add the blur effect 
-    // filter: blur(2px);
-    // -webkit-filter: blur(2px);    
+    left: 0; 
   }
 @media (max-width: $mobile-bp) {
   .container {
@@ -220,7 +215,7 @@
   
   .hexagon {
     position: relative;
-    width: 46%;
+    width: 47.2%;
     height: 80%;
     margin: auto;
     color: white;
@@ -270,6 +265,9 @@
       width: 25vw;
       height:25vw;
     }
+    .hexagon {
+      width: 46%;
+    }
   }
   @media (max-width: $mobile-bp) {
     .hexagonsContainer {
@@ -284,13 +282,11 @@
       // margin-right: 5vw;
       // margin-top: 5vw;
       margin: 0;
-
     }
     .hexagonWrapper:nth-of-type(2n) {
       // margin-left: 5vw;
       // margin-top: 5vw;
       margin: 0;
-
     }
     .hexagonWrapper:nth-of-type(3n) {
       // margin-top: -50vh;
