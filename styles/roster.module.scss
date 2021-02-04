@@ -21,7 +21,7 @@
   .playerCard {
     display: flex;
     justify-content: flex-start;
-    padding: 2.5vmax 0;
+    padding: 2.5vmax 1.25vmax;
     background: rgba(0,0,0,.425);
     // border: 1px solid blue; //debug
   }
@@ -112,7 +112,7 @@
       
       padding: 2.5vh 10vw;
       // border: 1px solid green; //debug
-      background: rgba(0,0,0,.425);
+      // background: rgba(0,0,0,.425);
   
     }
     .playerCard {
@@ -146,11 +146,6 @@
         p {
           margin: 0.5rem 0;  
           text-align: center;
-        }
-        .social {
-            a {
-                // border-bottom: 1px solid #fcfcfc;
-            }
         }
     }
   

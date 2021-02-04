@@ -26,7 +26,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 2.5vmax 0;
+  padding: 2.5vmax 1.25vmax;
   background: rgba(0, 0, 0, 0.425);
 }
 
@@ -118,7 +118,6 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 2.5vh 10vw;
-    background: rgba(0, 0, 0, 0.425);
   }
   .playerCard {
     display: -webkit-box;
