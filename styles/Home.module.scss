@@ -176,34 +176,34 @@
     width: 100%;
     padding: 2.5vh 10vw;
     margin: 0 auto;
-    margin-top: -15vh;
+    // margin-top: -15vh;
     // border: 1px solid red; //debug  
     
   }
   
 
   .hexagonWrapper:first-of-type {
-    margin-right: 10vw;
-    margin-top: 5vw;
+    // margin-right: 10vw;
+    // margin-top: 5vw;
     .hexagon:hover, .hexagon:active, .hexagon:focus {
       background: #757575;
     }
   }
   .hexagonWrapper:nth-of-type(2n) {
     // margin-left: 5vw;
-    margin-top: 5vw;
-    .hexagon {
-      background: #555555;
-    }
+    // margin-top: 5vw;
+    // .hexagon {
+    //   // background: #555555;
+    // }
     .hexagon:hover, .hexagon:active, .hexagon:focus {
       background: #757575;
     }
   }
   .hexagonWrapper:nth-of-type(3n) {
-    margin-top: -15vw;
-    .hexagon {
-      background: #444444;
-    }
+    // margin-top: -10vw;
+    // .hexagon {
+    //   // background: #444444;
+    // }
     .hexagon:hover, .hexagon:active, .hexagon:focus {
       background: #757575;
     }
@@ -213,8 +213,8 @@
   .hexagonWrapper {
     display: flex;    
     text-align: initial;
-    width: 25vw;    
-    height: 25vw;
+    width: 22.0vw;    
+    height: 22.5vw;
     cursor: pointer;
   }
   
@@ -236,7 +236,7 @@
     margin: auto;
     max-width: 10vw;
     color: transparent;
-    background: linear-gradient(45deg, #a58fe9, #e37682);
+    // background: linear-gradient(45deg, #a58fe9, #e37682);
     background-clip: text;
     -webkit-background-clip: text;
   }
@@ -260,24 +260,44 @@
   }
   
   @media (max-width: $tablet-bp) {
-    .hexagonWrapper:first-of-type {
-      // margin-right: 5vw;
-      // margin-top: 5vw;
-      // margin: 0;
-
+    .hexagonsContainer {
+      margin: 0;
     }
-    .hexagonWrapper:nth-of-type(2n) {
-      // margin-left: 5vw;
-      // margin-top: 5vw;
-      // margin: 0;
-
-    }
-    .hexagonWrapper:nth-of-type(3n) {
-      // margin-top: -50vh;
+    .hexagonWrapper {
+      margin: 0;
+      min-width: 200px;
+      min-height: 200px;
+      width: 25vw;
+      height:25vw;
     }
   }
   @media (max-width: $mobile-bp) {
     .hexagonsContainer {
       flex-direction: column;
+      margin: 0;
+    }
+    .hexagonWrapper {
+      width: 60vw;    
+      height: 60vw;
+    }
+    .hexagonWrapper:first-of-type {
+      // margin-right: 5vw;
+      // margin-top: 5vw;
+      margin: 0;
+
+    }
+    .hexagonWrapper:nth-of-type(2n) {
+      // margin-left: 5vw;
+      // margin-top: 5vw;
+      margin: 0;
+
+    }
+    .hexagonWrapper:nth-of-type(3n) {
+      // margin-top: -50vh;
+      margin: 0;
+    }
+    .hexagon img {
+      max-width: 32.5vw;
+
     }
   }

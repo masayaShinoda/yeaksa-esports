@@ -213,36 +213,14 @@
   width: 100%;
   padding: 2.5vh 10vw;
   margin: 0 auto;
-  margin-top: -15vh;
-}
-
-.hexagonWrapper:first-of-type {
-  margin-right: 10vw;
-  margin-top: 5vw;
 }
 
 .hexagonWrapper:first-of-type .hexagon:hover, .hexagonWrapper:first-of-type .hexagon:active, .hexagonWrapper:first-of-type .hexagon:focus {
   background: #757575;
 }
 
-.hexagonWrapper:nth-of-type(2n) {
-  margin-top: 5vw;
-}
-
-.hexagonWrapper:nth-of-type(2n) .hexagon {
-  background: #555555;
-}
-
 .hexagonWrapper:nth-of-type(2n) .hexagon:hover, .hexagonWrapper:nth-of-type(2n) .hexagon:active, .hexagonWrapper:nth-of-type(2n) .hexagon:focus {
   background: #757575;
-}
-
-.hexagonWrapper:nth-of-type(3n) {
-  margin-top: -15vw;
-}
-
-.hexagonWrapper:nth-of-type(3n) .hexagon {
-  background: #444444;
 }
 
 .hexagonWrapper:nth-of-type(3n) .hexagon:hover, .hexagonWrapper:nth-of-type(3n) .hexagon:active, .hexagonWrapper:nth-of-type(3n) .hexagon:focus {
@@ -254,8 +232,8 @@
   display: -ms-flexbox;
   display: flex;
   text-align: initial;
-  width: 25vw;
-  height: 25vw;
+  width: 22.0vw;
+  height: 22.5vw;
   cursor: pointer;
 }
 
@@ -283,7 +261,6 @@
   margin: auto;
   max-width: 10vw;
   color: transparent;
-  background: linear-gradient(45deg, #a58fe9, #e37682);
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -312,12 +289,42 @@
           transform: rotateZ(-60deg);
 }
 
+@media (max-width: 1023px) {
+  .hexagonsContainer {
+    margin: 0;
+  }
+  .hexagonWrapper {
+    margin: 0;
+    min-width: 200px;
+    min-height: 200px;
+    width: 25vw;
+    height: 25vw;
+  }
+}
+
 @media (max-width: 480px) {
   .hexagonsContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 0;
+  }
+  .hexagonWrapper {
+    width: 60vw;
+    height: 60vw;
+  }
+  .hexagonWrapper:first-of-type {
+    margin: 0;
+  }
+  .hexagonWrapper:nth-of-type(2n) {
+    margin: 0;
+  }
+  .hexagonWrapper:nth-of-type(3n) {
+    margin: 0;
+  }
+  .hexagon img {
+    max-width: 32.5vw;
   }
 }
 /*# sourceMappingURL=Home.module.css.map */
