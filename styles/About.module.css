@@ -86,6 +86,12 @@
   width: 2.5vmax !important;
 }
 
+@media (max-width: 480px) {
+  .aboutContainer .div4 a img {
+    width: 4.25vmax !important;
+  }
+}
+
 .aboutContainer .div4 a p {
   margin: .5rem 0;
 }

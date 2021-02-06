@@ -70,6 +70,11 @@
                 margin-right: 0.75vmax;
                 width: 2.5vmax !important; 
             }
+            @media (max-width: $mobile-bp) {
+                img {
+                    width: 4.25vmax !important;
+                }
+            }
             p {
                 margin: .5rem 0;
             }
