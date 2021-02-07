@@ -18,7 +18,6 @@
 }
 
 .frontpageContainer div {
-  max-width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,6 +32,7 @@
 }
 
 .frontpageContainer div p {
+  max-width: 45ch;
   line-height: 1.6;
 }
 
@@ -58,9 +58,21 @@
   background: #700000;
 }
 
+.frontpageContainer iframe {
+  max-width: 560px;
+  max-height: 315px;
+}
+
 @media (max-width: 1023px) {
-  .frontpageContainer div {
-    max-width: 50ch;
+  .frontpageContainer div p {
+    max-width: 65ch;
+  }
+}
+
+@media (max-width: 480px) {
+  .frontpageContainer iframe {
+    max-width: 80vw;
+    max-height: 30vh;
   }
 }
 /*# sourceMappingURL=Frontpage.module.css.map */

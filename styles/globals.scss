@@ -24,12 +24,20 @@ div, span, p, a, h1, h2, h3 {
   color: #fcfcfc;
 }
 
-h1, h2 {
-  font-family: $head;
-}
 h1 {
+  font-family: $head;
   font-size: 3.25rem;
+}
+h2 {
+  font-family: $body;
+  font-size: 1.45rem;
+  font-weight: 800;
 }
 p {
   font-family: $body; 
+}
+@media (max-width: $mobile-bp) {
+  h1,h2,p,a,img {
+    max-width: 80vw;
+  }
 }

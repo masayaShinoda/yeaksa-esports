@@ -1,0 +1,54 @@
+@import "./_variables.scss";
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5vmax;
+    // margin: 4.25vh 0;
+    // border: 1px solid red; //debug
+    @media (max-width: $mobile-bp) {
+
+        div {
+            max-width: 80vw;
+            height: auto !important;
+        }
+    }
+}
+.div1 {
+    display: flex;
+    flex-direction: colmn;
+    max-width: 80vw;
+    width: fit-content;
+    margin-top: 2.5vmax;
+    // border: 1px solid red;
+    h1 {
+        margin: .75rem 0;
+    }
+    h2 {
+        margin: .5rem 0;
+    }
+
+}
+.div2 {
+    // margin-bottom: 2.5vmax;
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content;
+    img {
+        max-width: 40vw;
+    }
+    @media (max-width: $tablet-bp) {
+        img {
+            min-width: 360px;
+            max-width: 60vw;
+        }
+    }
+    @media (max-width: $mobile-bp) {
+        img {
+            min-width: 80vw;
+            max-width: 80vw;
+        }
+    }
+
+}

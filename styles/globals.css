@@ -26,15 +26,24 @@ div, span, p, a, h1, h2, h3 {
   color: #fcfcfc;
 }
 
-h1, h2 {
+h1 {
   font-family: "Bebas Neue", sans-serif;
+  font-size: 3.25rem;
 }
 
-h1 {
-  font-size: 3.25rem;
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.45rem;
+  font-weight: 800;
 }
 
 p {
   font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 480px) {
+  h1, h2, p, a, img {
+    max-width: 80vw;
+  }
 }
 /*# sourceMappingURL=globals.css.map */
