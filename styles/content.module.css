@@ -112,17 +112,18 @@
   margin-top: -7.5vmax;
 }
 
+.div2 p {
+  max-width: 35ch;
+  margin: .5rem 0;
+  line-height: 2 !important;
+}
+
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
     .div2 p {
       margin: 2.5vmax 0;
     }
   }
-}
-
-.div2 p {
-  max-width: 35ch;
-  margin: .5rem 0;
 }
 
 @media (max-width: 1023px) {
