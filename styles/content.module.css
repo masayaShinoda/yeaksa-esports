@@ -112,6 +112,14 @@
   margin-top: -7.5vmax;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .div2 p {
+      margin: 1.25vmax 0;
+    }
+  }
+}
+
 .div2 p {
   max-width: 35ch;
   margin: .5rem 0;

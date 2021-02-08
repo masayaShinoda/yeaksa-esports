@@ -8,7 +8,6 @@
     // margin: 4.25vh 0;
     // border: 1px solid red; //debug
     @media (max-width: $mobile-bp) {
-
         div {
             max-width: 80vw;
             height: auto !important;
@@ -80,7 +79,13 @@
         // border: 1px solid red; //debug        
         // margin: 2.5vmax 0;
     }
-
+    @media not all and (min-resolution:.001dpcm) {
+        @supports (-webkit-appearance: none) {
+            p {
+                margin: 1.25vmax 0;
+            }
+        }
+    }
     p {
         max-width: 35ch;
         margin: .5rem 0;
