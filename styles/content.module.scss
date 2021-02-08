@@ -79,17 +79,18 @@
         // border: 1px solid red; //debug        
         // margin: 2.5vmax 0;
     }
-    p {
-        max-width: 35ch;
-        margin: .5rem 0;
-        line-height: 2 !important;
-    }
     @media not all and (min-resolution:.001dpcm) {
         @supports (-webkit-appearance: none) {
             p {
                 margin: 2.5vmax 0;
+                margin-left: 2.5vmax;
             }
         }
+    }
+    p {
+        max-width: 35ch;
+        margin: .5rem 0;
+        line-height: 1.8 !important;
     }
     
 }
