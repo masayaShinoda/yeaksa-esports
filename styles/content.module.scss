@@ -36,12 +36,15 @@
     // margin-bottom: 2.5vmax;
     display: flex;
     flex-direction: row !important;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 4.25vmax;
+    max-width: 80vw;
     max-height: fit-content;
     // border: 1px solid blue; //debug
     img {
+        max-height: 65vh;
         max-width: 35vw;
-        
     }   
     @media (max-width: $tablet-bp) {
         img {
@@ -59,19 +62,34 @@
     span {
         display: flex;
         flex-direction: column;
+        gap: 1.25vmax;
+        margin-top: -5vmax;
         // border: 1px solid red; //debug
         
         // margin: 2.5vmax 0;
     }
     p {
         max-width: 45ch;
-        margin: 1.45rem 0;
+        margin: .5rem 0;
     }
     
+}
+@media (max-width: $tablet-bp) {
+    .div2 {
+        span {
+            margin-top: 0;
+        }
+        p {
+            max-width: 50ch !important;
+            margin-top: 0;
+            // border: 1px solid purple; //debug
+        }
+    }
 }
 @media (max-width: $mobile-bp) {
     .div2 {
         flex-direction: column !important;
         gap: .5vmax;
+        
     }
 }
