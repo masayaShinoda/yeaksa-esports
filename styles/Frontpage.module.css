@@ -43,6 +43,7 @@
   font-weight: 700;
   background: #BC0000;
   padding: 1.25vmax 1.75vmax;
+  border-radius: .5rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
