@@ -78,9 +78,7 @@ export default function Content() {
                                    <ReactPlayer url={data.content[1].video.url} />                                    
                                 : null}
                                 <span>
-                                    <p>
-                                        {data.content[1].text}
-                                    </p>                                    
+                                    {data.content[1].text ? <p>{data.content[1].text}</p> : null}         
                                     {data.content[1].actionLink ? <a href={data.content[1].actionLink}>{data.content[1].actionText}</a> : null}
                                 </span>
                                 
