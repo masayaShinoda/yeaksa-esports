@@ -66,14 +66,14 @@ export default function About() {
                             <h1>Social Media</h1>
                             <span>
                                 <a 
-                                    href="facebook.com/yeaksa.official"
+                                    href="https://www.facebook.com/yeaksa.official"
                                     style={{display: `flex`, alignItems: `center`}}
                                     >
                                     <img src="./fb-clear.png" alt="Facebook" />
                                     <p>yeaksa.esports</p>
                                 </a>
                                 <a 
-                                    href="facebook.com/yeaksa.official"
+                                    href="https://www.instagram.com/yeaksa.esports/"
                                     style={{display: `flex`, alignItems: `center`}}
                                     >
                                     <img src="./ig-clear.png" alt="Instagram" />
