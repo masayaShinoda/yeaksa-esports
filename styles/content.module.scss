@@ -25,6 +25,13 @@
     h1 {
         margin: .75rem 0;
     }
+    @media not all and (min-resolution:.001dpcm) {
+        @supports (-webkit-appearance: none) {
+            h1 {
+                margin: 2.25vmax 0;
+            }
+        }
+    }
     h2 {
         margin: .5rem 0;
         letter-spacing: 3px;
@@ -70,10 +77,10 @@
         flex-direction: column;
         gap: 1.25vmax;
         margin-top: -5vmax;
-        // border: 1px solid red; //debug
-        
+        // border: 1px solid red; //debug        
         // margin: 2.5vmax 0;
     }
+
     p {
         max-width: 45ch;
         margin: .5rem 0;

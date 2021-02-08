@@ -39,6 +39,14 @@
   margin: .75rem 0;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .div1 h1 {
+      margin: 2.25vmax 0;
+    }
+  }
+}
+
 .div1 h2 {
   margin: .5rem 0;
   letter-spacing: 3px;
