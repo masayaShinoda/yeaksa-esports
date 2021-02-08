@@ -45,7 +45,14 @@
     img {
         max-height: 65vh;
         max-width: 35vw;
-    }   
+    }
+    @media not all and (min-resolution:.001dpcm) {
+        @supports (-webkit-appearance: none) {
+            img {
+                margin-right: 2.25vmax;
+            }
+        }
+    }
     @media (max-width: $tablet-bp) {
         img {
             // min-width: 360px;            
@@ -72,19 +79,7 @@
         margin: .5rem 0;
     }
     
-/* Safari 10.1+ (alternate method) */
-
-@media not all and (min-resolution:.001dpcm)
-{ @supports (-webkit-appearance:none) {
-
-    .div2 { 
-
-        img {
-            margin-right: 4.25rem;
-        }
-
-    }
-}}
+}
 @media (max-width: $tablet-bp) {
     .div2 {
         span {
@@ -103,4 +98,4 @@
         gap: .5vmax;
         
     }
-}}
+}
