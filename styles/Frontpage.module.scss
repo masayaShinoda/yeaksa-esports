@@ -23,7 +23,7 @@
             max-width: 45ch;
             line-height: 1.6;
         }
-        .actionBtn {
+        .actionBtn, a {
             font-size: 1.1rem;
             text-transform: uppercase;
             letter-spacing: 1px;            
@@ -35,6 +35,9 @@
             transition: .2s ease-in-out;
             box-shadow: 1px 2px 5px #212121;     
         }
+        a:hover,
+        a:active,
+        a:focus,
         .actionBtn:hover,
         .actionBtn:active,
         .actionBtn:focus {

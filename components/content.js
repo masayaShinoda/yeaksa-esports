@@ -36,6 +36,8 @@ export default function Content() {
                             video {
                               url
                             }
+                            actionLink
+                            actionText
                           }
                         }
                       }
@@ -68,18 +70,20 @@ export default function Content() {
                                 </h1>
                                 {data.content[0].subheading ? <h2>{data.content[0].subheading}</h2> : null}
                             </div>
-                            <div className={contentStyles.div2}>
-                                 
+                            <div className={contentStyles.div2}>                            
                             
                                 {data.content[1].singlephoto ? <img src={data.content[1].singlephoto.url} alt={data.content[1].singlephoto.url} /> : null}
 
                                 {data.content[1].video ? 
                                    <ReactPlayer url={data.content[1].video.url} />                                    
                                 : null}
-
-                                <p>
-                                    {data.content[1].text}
-                                </p>
+                                <span>
+                                    <p>
+                                        {data.content[1].text}
+                                    </p>                                    
+                                    {data.content[1].actionLink ? <a href={data.content[1].actionLink}>{data.content[1].actionText}</a> : null}
+                                </span>
+                                
                             </div>
 
                         </>

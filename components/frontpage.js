@@ -1,5 +1,5 @@
-import Content from "./content"
 import styles from "../styles/Frontpage.module.css"
+import Content from "./content"
 
 export default function Frontpage() {
     return (

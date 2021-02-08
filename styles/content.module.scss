@@ -28,20 +28,23 @@
     h2 {
         margin: .5rem 0;
     }
-
 }
 .div2 {
     // margin-bottom: 2.5vmax;
     display: flex;
-    flex-direction: column;
+    flex-direction: row !important;
+    gap: 4.25vmax;
     max-height: fit-content;
+    // border: 1px solid blue; //debug
     img {
-        max-width: 40vw;
-    }
+        max-width: 35vw;
+        
+    }   
     @media (max-width: $tablet-bp) {
         img {
-            min-width: 360px;
-            max-width: 60vw;
+            // min-width: 360px;
+            
+            max-width: 42.5vw;            
         }
     }
     @media (max-width: $mobile-bp) {
@@ -50,5 +53,22 @@
             max-width: 80vw;
         }
     }
-
+    span {
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid red; //debug
+        
+        // margin: 2.5vmax 0;
+    }
+    p {
+        max-width: 45ch;
+        margin: 1.45rem 0;
+    }
+    
+}
+@media (max-width: $mobile-bp) {
+    .div2 {
+        flex-direction: column !important;
+        gap: .5vmax;
+    }
 }
