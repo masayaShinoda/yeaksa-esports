@@ -51,6 +51,7 @@
                     background: rgba(245,245,245,.625);
                     a {
                         color: #212121;
+                        text-overflow: clip;
                         overflow: visible;
                     }
                 }

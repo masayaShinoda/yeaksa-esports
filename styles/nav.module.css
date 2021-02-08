@@ -72,6 +72,7 @@
 
 .navContainer nav .navDropDown .dropDown li:hover a {
   color: #212121;
+  text-overflow: clip;
   overflow: visible;
 }
 
