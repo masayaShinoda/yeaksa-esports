@@ -4,11 +4,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
   padding: 2.5vh 10vw;
+}
+
+.upperContent a {
+  position: absolute;
+  left: 15vw;
 }
 
 .upperContent p {
@@ -51,9 +56,17 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    padding: 1.25vh 2.5vw;
+  }
+  .upperContent a {
+    position: relative;
+    left: 0;
   }
   .content {
     width: 100%;

@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css'
 import rosterStyles from "../styles/roster.module.css"
 
 export default function rosterCsgo() {
+    const csgoData = []
     const token = '7d75f2d5a1e12e28d4ee89f229cdc5';
 
     const [playerData, setPlayerData] = useState((playerData) => {return null}); // by default there is no player data
@@ -23,7 +24,7 @@ export default function rosterCsgo() {
               },
               body: JSON.stringify({
                 query: `{ 
-                    allMlbbs { 
+                    allContentCreators { 
                       firstname
                       ign
                       secondname
@@ -39,7 +40,7 @@ export default function rosterCsgo() {
         )
         .then(res => res.json())
         .then((res) => {
-            setPlayerData(res.data["allMlbbs"])
+            setPlayerData(res.data["allContentCreators"])
         })
         .catch((error) => {
             console.log(error);
@@ -66,9 +67,9 @@ export default function rosterCsgo() {
                     </h2>
                 </a>
                 <p 
-                    style={{margin: `0 auto`, fontSize: `2.25rem`, fontWeight: 700,}}
+                    style={{margin: `0`, fontSize: `2.25rem`, fontWeight: 700,}}
                 >
-                    Mobile Legends
+                    Content Creators
                 </p>
             </div>
             <div className={rosterStyles.content} style={{marginTop: `1.25vmax`}}>
@@ -80,6 +81,7 @@ export default function rosterCsgo() {
                             <img 
                                 src="/logo-with-bg.jpg" 
                                 style={{width: `15vmax`}}
+                                className={rosterStyles.avatar}
                             />
                         </div>
                         <div className={rosterStyles.info}>

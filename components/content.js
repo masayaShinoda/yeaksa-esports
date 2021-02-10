@@ -55,7 +55,7 @@ export default function Content() {
         });
     }, [])
     return (
-        <div className={contentStyles.contentContainer}>
+        <article className={contentStyles.contentContainer}>
             <link
                 rel="stylesheet"
                 href="https://video-react.github.io/assets/video-react.css"
@@ -88,6 +88,6 @@ export default function Content() {
                     )
                 })
             }
-        </div>
+        </article>
     )
 }

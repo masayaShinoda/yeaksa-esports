@@ -61,7 +61,7 @@ export default function rosterCsgo() {
 
         <main className={styles.main} style={{justifyContent: `flex-start`}}>
             <div className={rosterStyles.upperContent}>
-                <a href="/roster">
+                <a href="/member">
                     <h2 style={{margin: `0`}}>
                         &#8249; Back
                     </h2>
