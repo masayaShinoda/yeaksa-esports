@@ -5,7 +5,7 @@ import Footer from "../components/footer.js"
 import styles from '../styles/Home.module.css'
 
 
-export default function About() {
+export default function Roster() {
     return (
         <div className={styles.container}>
             <Head>
@@ -24,7 +24,7 @@ export default function About() {
                 <div className={styles.background}></div>
 
                 <main className={styles.main}>
-                    <h1>Roster</h1>
+                    <h1>Members</h1>
                     <div className={styles.hexagonsContainer}>
                         <div className={styles.hexagonWrapper}>
                             <a href="/roster-csgo" className={styles.hexagon}>
