@@ -62,21 +62,18 @@
   -webkit-box-direction: normal !important;
       -ms-flex-direction: row !important;
           flex-direction: row !important;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 4.25vmax;
   max-width: 80vw;
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
+  overflow-wrap: break-word;
 }
 
 .div2 img {
   max-height: 65vh;
   max-width: 35vw;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -109,7 +106,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.25vmax;
-  margin-top: -7.5vmax;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
