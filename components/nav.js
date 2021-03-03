@@ -79,6 +79,9 @@ export default function Nav() {
                         <li>
                             <a href="/roster-mlbb">Mobile Legends</a>                            
                         </li>
+                        <li>
+                            <a href="/content-creators">Content Creators</a>                            
+                        </li>
                     </ul>
                 </span>
                 <a href="/shop">Shop</a>    

@@ -6,7 +6,6 @@ import styles from '../styles/Home.module.css'
 import rosterStyles from "../styles/roster.module.css"
 
 export default function rosterCsgo() {
-    const csgoData = []
     const token = '7d75f2d5a1e12e28d4ee89f229cdc5';
 
     const [playerData, setPlayerData] = useState((playerData) => {return null}); // by default there is no player data
@@ -25,14 +24,15 @@ export default function rosterCsgo() {
               body: JSON.stringify({
                 query: `{ 
                     allContentCreators { 
-                      firstname
-                      ign
-                      secondname
-                      id
-                      facebook
-                      instagram
-                      role
-                      stream
+                        id
+                        ign
+                        instagram
+                        role
+                        secondname
+                        streamLink
+                        createdAt
+                        facebook
+                        firstname
                       } 
                   }`
               }),
@@ -101,6 +101,8 @@ export default function rosterCsgo() {
                                 <b><p>{data.instagram}</p></b>
                                 {data.facebook ? <p>Facebook:</p> : null}
                                 <b><p>{data.facebook}</p></b>
+                                {data.streamLink ? <b><a href={data.streamLink}><p>Stream Link</p></a></b> : null}
+                                
                             </span>
                         </div>
                     </div>
