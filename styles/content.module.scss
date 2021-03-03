@@ -117,6 +117,10 @@
     .div2 {
         flex-direction: column !important;
         gap: .5vmax;
-        
+        p {
+            max-width: 80vw !important;
+            margin-top: 0;
+            // border: 1px solid purple; //debug
+        }
     }
 }

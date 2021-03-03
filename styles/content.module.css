@@ -144,5 +144,9 @@
             flex-direction: column !important;
     gap: .5vmax;
   }
+  .div2 p {
+    max-width: 80vw !important;
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=content.module.css.map */
