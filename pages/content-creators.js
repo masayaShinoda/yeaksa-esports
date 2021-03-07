@@ -30,9 +30,11 @@ export default function rosterCsgo() {
                         role
                         secondname
                         streamLink
-                        createdAt
                         facebook
                         firstname
+                        profpic {
+                            url
+                        }
                       } 
                   }`
               }),
@@ -78,11 +80,20 @@ export default function rosterCsgo() {
                     return (
                         <div className={rosterStyles.playerCard}>
                         <div>
-                            <img 
-                                src="/logo-with-bg.jpg" 
-                                style={{width: `15vmax`}}
-                                className={rosterStyles.avatar}
-                            />
+                            {
+                                data.profpic ? 
+                                <img 
+                                    src={data.profpic.url}
+                                    style={{width: `15vmax`}}
+                                    className={rosterStyles.avatar}
+                                />
+                                : 
+                                <img 
+                                    src="/logo-with-bg.jpg" 
+                                    style={{width: `15vmax`}}
+                                    className={rosterStyles.avatar}
+                                />
+                            }
                         </div>
                         <div className={rosterStyles.info}>
                             <span style={{display: `flex`}}>
@@ -101,8 +112,7 @@ export default function rosterCsgo() {
                                 <b><p>{data.instagram}</p></b>
                                 {data.facebook ? <p>Facebook:</p> : null}
                                 <b><p>{data.facebook}</p></b>
-                                {data.streamLink ? <b><a href={data.streamLink}><p>Stream Link</p></a></b> : null}
-                                
+                                {data.streamLink ? <b><a href={data.streamLink}><p>Stream Link</p></a></b> : null}                                
                             </span>
                         </div>
                     </div>
