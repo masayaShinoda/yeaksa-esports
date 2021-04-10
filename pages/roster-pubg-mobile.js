@@ -5,7 +5,7 @@ import Footer from "../components/footer.js"
 import styles from '../styles/Home.module.css'
 import rosterStyles from "../styles/roster.module.css"
 
-export default function rosterCsgo() {
+export default function rosterPubgm() {
     const token = '7d75f2d5a1e12e28d4ee89f229cdc5';
 
     const [playerData, setPlayerData] = useState((playerData) => {return null}); // by default there is no player data

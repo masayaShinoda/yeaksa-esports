@@ -67,7 +67,9 @@ export default function Nav() {
             </a>
             <nav>
                 <a href="/">Home</a>
-                <span className={styles.navDropDown}>
+                <a href="/members">Members</a>    
+
+                {/* <span className={styles.navDropDown}>
                     <a style={{display: `inline-block`}} href="/members">Members</a>
                     <ul className={styles.dropDown}>
                         <li>
@@ -83,7 +85,7 @@ export default function Nav() {
                             <a href="/content-creators">Content Creators</a>                            
                         </li>
                     </ul>
-                </span>
+                </span> */}
                 <a href="/shop">Shop</a>    
                 {/* <a href="/">Partners</a> */}
                 <a href="/about">About</a>

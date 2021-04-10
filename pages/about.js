@@ -57,8 +57,8 @@ export default function About() {
                                 yeaksa.official@gmail.com    
                             </a>
                             <span className={aboutStyles.details}>
-                                <p><b>Manager:</b> Bonna Rong</p>
-                                <p><b>Digital Marketing:</b> Dekin</p>
+                                <p><b>Management:</b> Bonna Rong, Dekin</p>
+                                <p><b>Digital Marketing:</b> Dekin, Masaya</p>
                                 <p><b>Developer:</b> Masaya</p>
                             </span>
                         </div>

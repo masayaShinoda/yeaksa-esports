@@ -5,7 +5,7 @@ import Footer from "../components/footer.js"
 import styles from '../styles/Home.module.css'
 import rosterStyles from "../styles/roster.module.css"
 
-export default function rosterMlbb() {
+export default function rosterYeaksaXAtlantic() {
     const token = '7d75f2d5a1e12e28d4ee89f229cdc5';
 
     const [playerData, setPlayerData] = useState((playerData) => {return null}); // by default there is no player data
@@ -23,7 +23,7 @@ export default function rosterMlbb() {
               },
               body: JSON.stringify({
                 query: `{ 
-                    allMlbbs { 
+                    allPubgmxag { 
                       firstname
                       ign
                       secondname
@@ -39,7 +39,7 @@ export default function rosterMlbb() {
         )
         .then(res => res.json())
         .then((res) => {
-            setPlayerData(res.data["allMlbbs"])
+            setPlayerData(res.data["allPubgmxag"])
         })
         .catch((error) => {
             console.log(error);
@@ -68,7 +68,7 @@ export default function rosterMlbb() {
                 <p 
                     style={{margin: `0 auto`, fontSize: `2.25rem`, fontWeight: 700,}}
                 >
-                    Mobile Legends
+                    PUBG Mobile X Atlantic Gaming
                 </p>
             </div>
             <div className={rosterStyles.content} style={{marginTop: `1.25vmax`}}>

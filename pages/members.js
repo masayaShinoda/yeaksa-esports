@@ -33,6 +33,12 @@ export default function Roster() {
                             </a>
                         </div>
                         <div className={styles.hexagonWrapper}>
+                            <a href="/roster-valorant" className={styles.hexagon}>
+                            <img src="/roster-icon/roster-hexagon-icon-val.png"></img>
+                                {/* <i className={styles.fab fa-instagram}></i> */}
+                            </a>
+                        </div>
+                        <div className={styles.hexagonWrapper}>
                             <a href="/roster-mlbb" className={styles.hexagon}>
                             <img src="/roster-icon/roster-hexagon-icon-mlbb.png"></img>
 
@@ -48,6 +54,12 @@ export default function Roster() {
                         <div className={styles.hexagonWrapper}>
                             <a href="/content-creators" className={styles.hexagon}>
                             <img src="/roster-icon/roster-hexagon-icon-concre.png"></img>
+                                {/* <i className={styles.fab fa-instagram}></i> */}
+                            </a>
+                        </div>
+                        <div className={styles.hexagonWrapper}>
+                            <a href="/roster-yeaksa-x-atlantic" className={styles.hexagon}>
+                            <img src="/roster-icon/roster-hexagon-icon-yeaksa-x-ag.png"></img>
                                 {/* <i className={styles.fab fa-instagram}></i> */}
                             </a>
                         </div>
