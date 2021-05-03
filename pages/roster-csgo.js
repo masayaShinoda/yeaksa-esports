@@ -33,6 +33,7 @@ export default function rosterCsgo() {
                       instagram
                       role
                       stream
+                      active
                       } 
                   }`
               }),
@@ -75,6 +76,7 @@ export default function rosterCsgo() {
             <div className={rosterStyles.content} style={{marginTop: `1.25vmax`}}>
                 {playerData &&
                     playerData.map(data => {
+                        if (data.active) {  
                     return (
                         <div className={rosterStyles.playerCard}>
                         <div>
@@ -105,7 +107,9 @@ export default function rosterCsgo() {
                         </div>
                     </div>
                     )
+                                }
                     })
+                    
                 }                
                 
 
