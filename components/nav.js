@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Link from "next/link"
 import styles from "../styles/nav.module.css"
 
 export default function Nav() {
@@ -61,13 +62,13 @@ export default function Nav() {
                 </div>
             </button>
         <div className={styles.navContainer} id="nav">            
-            <a className={styles.logoBtn} href="/">
+            <Link className={styles.logoBtn} href="/">
                 <img className={styles.logo} src="/256w/logo-256.png" alt="Logo" />
                 {/* <img className={styles.logo} src="/428w/yeaksa-monochrome-06_result.png" alt="Logo" /> */}
-            </a>
+            </Link>
             <nav>
-                <a href="/">Home</a>
-                <a href="/members">Members</a>    
+                <Link href="/">Home</Link>
+                <Link href="/members">Members</Link>    
 
                 {/* <span className={styles.navDropDown}>
                     <a style={{display: `inline-block`}} href="/members">Members</a>
@@ -86,11 +87,10 @@ export default function Nav() {
                         </li>
                     </ul>
                 </span> */}
-                <a href="/shop">Shop</a>    
-                {/* <a href="/">Partners</a> */}
-                <a href="/about">About</a>
+                <Link href="/shop">Shop</Link>    
+                <Link href="/about">About</Link>
                 {liveData.liveStatus &&
-                 <a href={liveData.link}>Live &#128308;</a> 
+                 <Link href={liveData.link}>Live &#128308;</Link> 
                 }
             </nav>
         </div>
