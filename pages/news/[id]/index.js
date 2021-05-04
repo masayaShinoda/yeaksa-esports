@@ -87,7 +87,10 @@ const News = () => {
                                 return (
                                     <article className={articleStyles.articleContainer}>
                                         <span style={{margin: 0, padding: 0, width: `100%`, marginBottom: `3.25vh`}}>
-                                            <a style={{display: `inline-block`, maxWidth: `max-content`}} href="/members">
+                                            <a 
+                                                style={{display: `inline-block`, maxWidth: `max-content`}}
+                                                href="/"
+                                            >
                                                 <h2 style={{margin: `0`}}>
                                                     &#8249; Back
                                                 </h2>
