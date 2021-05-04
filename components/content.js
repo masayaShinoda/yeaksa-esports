@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import ReactPlayer from "react-player"
 import contentStyles from "../styles/content.module.css"
 
-export default function Content() {
+const Content = () => {
     const token = '7d75f2d5a1e12e28d4ee89f229cdc5';
     const [homeData, setHomeData] = useState((homeData) => {return null}); // by default there is no homepage data
-    
+
     useEffect(() => {
         fetch(
             'https://graphql.datocms.com/',
@@ -54,6 +54,7 @@ export default function Content() {
             console.log(error);
         });
     }, [])
+
     return (
         <article className={contentStyles.contentContainer}>
             <link
@@ -79,7 +80,10 @@ export default function Content() {
                                     {data.content[1].text ? 
                                         <>
                                             <p>{data.content[1].text}</p>
-                                            <a href="/" style={{maxWidth: `max-content`, fontWeight: `700`}}>
+                                            <a 
+                                                href={`/news/${data.content[0].id}`} 
+                                                style={{maxWidth: `max-content`, fontWeight: `700`}}
+                                            >
                                                 Read more
                                             </a>
                                         </>
@@ -100,3 +104,4 @@ export default function Content() {
         </article>
     )
 }
+export default Content;
