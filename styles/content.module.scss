@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2.5vmax;
+    // gap: 2.5vmax;
     // margin: 4.25vh 0;
     // border: 1px solid red; //debug
     @media (max-width: $mobile-bp) {
@@ -14,12 +14,16 @@
         }
     }
 }
+.div1, .div2 {
+    // border: 1px solid purple; //debug
+}
 .div1 {
     display: flex;
-    flex-direction: colmn;
+    flex-direction: colmun;
+    min-width: 45vw;
     max-width: 80vw;
     width: fit-content;
-    margin-top: 2.5vmax;
+    margin-top: 4.25vmax;
     // border: 1px solid red; //debug
     h1 {
         margin: .75rem 0;
@@ -31,21 +35,21 @@
         font-weight: 400;
     }
 }
-@media not all and (min-resolution:.001dpcm) {
-    @supports (-webkit-appearance: none) {
-        .div1 {
-            margin: 2.25vmax 0;
-        }
-    }
-}
+// @media not all and (min-resolution:.001dpcm) {
+//     @supports (-webkit-appearance: none) {
+//         .div1 {
+//             margin: 2.25vmax 0;
+//         }
+//     }
+// }
 .div2 {
     // margin-bottom: 2.5vmax;
     display: flex;
-    flex-direction: row !important;
-    
+    flex-direction: row !important;    
     flex-wrap: wrap;
-    gap: 4.25vmax;
+    // gap: 4.25vmax;
     max-width: 80vw;
+    margin: 2.5vh 0;
     overflow-wrap: break-word;
     // max-height: fit-content;
     // border: 1px solid blue; //debug
@@ -76,30 +80,50 @@
     span {
         display: flex;
         flex-direction: column;
-        gap: 1.25vmax;
-        // margin-top: -7.5vmax;
+        height: max-content;
+        margin: 2.5vmax 0;
+        margin-left: 2.5vmax;
+        // background: rgba(150,150,150,.125);
+        padding: .5rem ;
         // border: 1px solid red; //debug        
-        // margin: 2.5vmax 0;
     }
-    @media not all and (min-resolution:.001dpcm) {
-        @supports (-webkit-appearance: none) {
-            p {
-                margin: 2.5vmax 0;
-                margin-left: 2.5vmax;
-            }
-        }
-    }
+    // @media not all and (min-resolution:.001dpcm) {
+    //     @supports (-webkit-appearance: none) {
+    //         p {
+    //             margin: 2.5vmax 0;
+    //             margin-left: 2.5vmax;
+    //         }
+    //     }
+    // }
     p {
-        max-width: 35ch;
+        display: -webkit-box;
+        overflow: hidden;        
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        max-width: 35ch !important;
         margin: .5rem 0;
         line-height: 1.8 !important;
-        background: rgba(150,150,150,.125);
-        padding: 1.5rem 1.1rem;
-        border-radius: .5rem;
-        // overflow: hidden;    
-        // text-overflow: ellipsis;
+        // border-radius: .5rem;
+        // border: 1px solid green; //debug
     }
-    
+    .actionBtn {
+        margin-top: 1.1rem;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;            
+        font-weight: 700;
+        background: #BC0000;
+        padding: .75vmax 1.25vmax; 
+        border-radius: .5rem;
+        width: fit-content;       
+        transition: .2s ease-in-out;
+        box-shadow: 1px 2px 5px #212121;     
+    }
+    .actionBtn:hover,
+    .actionBtn:active,
+    .actionBtn:focus {
+        background: darken(#BC0000, 15%);
+    }
 }
 @media (max-width: $tablet-bp) {
     .div2 {
@@ -116,7 +140,7 @@
 @media (max-width: $mobile-bp) {
     .div2 {
         flex-direction: column !important;
-        gap: .5vmax;
+        // gap: .5vmax;
         p {
             max-width: 80vw !important;
             margin-top: 0;

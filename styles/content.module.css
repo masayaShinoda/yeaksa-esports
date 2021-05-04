@@ -10,7 +10,6 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 2.5vmax;
 }
 
 @media (max-width: 480px) {
@@ -26,13 +25,14 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: colmn;
-          flex-direction: colmn;
+      -ms-flex-direction: colmun;
+          flex-direction: colmun;
+  min-width: 45vw;
   max-width: 80vw;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-top: 2.5vmax;
+  margin-top: 4.25vmax;
 }
 
 .div1 h1 {
@@ -46,14 +46,6 @@
   font-weight: 400;
 }
 
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) {
-    .div1 {
-      margin: 2.25vmax 0;
-    }
-  }
-}
-
 .div2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,8 +56,8 @@
           flex-direction: row !important;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 4.25vmax;
   max-width: 80vw;
+  margin: 2.5vh 0;
   overflow-wrap: break-word;
 }
 
@@ -105,25 +97,46 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1.25vmax;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) {
-    .div2 p {
-      margin: 2.5vmax 0;
-      margin-left: 2.5vmax;
-    }
-  }
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 2.5vmax 0;
+  margin-left: 2.5vmax;
+  padding: .5rem;
 }
 
 .div2 p {
-  max-width: 35ch;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: 35ch !important;
   margin: .5rem 0;
   line-height: 1.8 !important;
-  background: rgba(150, 150, 150, 0.125);
-  padding: 1.5rem 1.1rem;
+}
+
+.div2 .actionBtn {
+  margin-top: 1.1rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  background: #BC0000;
+  padding: .75vmax 1.25vmax;
   border-radius: .5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  -webkit-box-shadow: 1px 2px 5px #212121;
+          box-shadow: 1px 2px 5px #212121;
+}
+
+.div2 .actionBtn:hover,
+.div2 .actionBtn:active,
+.div2 .actionBtn:focus {
+  background: #700000;
 }
 
 @media (max-width: 1023px) {
@@ -142,7 +155,6 @@
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
-    gap: .5vmax;
   }
   .div2 p {
     max-width: 80vw !important;

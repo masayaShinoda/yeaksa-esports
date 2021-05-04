@@ -36,7 +36,7 @@
   line-height: 1.8;
 }
 
-.frontpageContainer div .actionBtn, .frontpageContainer div a {
+.frontpageContainer div .actionBtn {
   font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -53,9 +53,6 @@
           box-shadow: 1px 2px 5px #212121;
 }
 
-.frontpageContainer div a:hover,
-.frontpageContainer div a:active,
-.frontpageContainer div a:focus,
 .frontpageContainer div .actionBtn:hover,
 .frontpageContainer div .actionBtn:active,
 .frontpageContainer div .actionBtn:focus {

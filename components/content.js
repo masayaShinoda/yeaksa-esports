@@ -65,9 +65,7 @@ export default function Content() {
                     return (
                         <>
                             <div className={contentStyles.div1}>
-                                <h1>
-                                    {data.content[0].heading}
-                                </h1>
+                                <h1>{data.content[0].heading}</h1>
                                 {data.content[0].subheading ? <h2>{data.content[0].subheading}</h2> : null}
                             </div>
                             <div className={contentStyles.div2}>                            
@@ -78,8 +76,19 @@ export default function Content() {
                                    <ReactPlayer url={data.content[1].video.url} />                                    
                                 : null}
                                 <span>
-                                    {data.content[1].text ? <p>{data.content[1].text}</p> : null}         
-                                    {data.content[1].actionLink ? <a href={data.content[1].actionLink}>{data.content[1].actionText}</a> : null}
+                                    {data.content[1].text ? 
+                                        <>
+                                            <p>{data.content[1].text}</p>
+                                            <a href="/" style={{maxWidth: `max-content`, fontWeight: `700`}}>
+                                                Read more
+                                            </a>
+                                        </>
+                                    : null}
+                                    {data.content[1].actionLink ? 
+                                    <a href={data.content[1].actionLink} className={contentStyles.actionBtn}>
+                                        {data.content[1].actionText}
+                                    </a> : null}
+                                    
                                 </span>
                                 
                             </div>
