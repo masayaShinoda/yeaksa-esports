@@ -2,7 +2,7 @@ import styles from "../styles/Frontpage.module.css"
 import Content from "./content"
 export default function Frontpage() {
     return (
-        <div className={styles.frontpageContainer}>
+        <div className={styles.frontpageContainer} style={{maxWidth: `1440px`}}>
             <div className={styles.frontpage}>
                 <h1 style={{marginBottom: 0}}>We're back!</h1>
                 <p>Saying hello to the Cambodian E-sports scene, YeakSa is back prepared and up for the challenge.</p>                

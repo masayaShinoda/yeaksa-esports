@@ -2,7 +2,8 @@
 
 .contentContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    // flex-direction: row;
     flex-wrap: wrap;
     // gap: 2.5vmax;
     // margin: 4.25vh 0;
@@ -56,15 +57,16 @@
     img {
         max-height: 65vh;        
         max-width: 35vw;
+        max-width: 400px; //ultrawide fix
         object-fit: contain;        
     }
-    @media not all and (min-resolution:.001dpcm) {
-        @supports (-webkit-appearance: none) {
-            img {
-                margin-right: 2.25vmax;
-            }
-        }
-    }
+    // @media not all and (min-resolution:.001dpcm) {
+    //     @supports (-webkit-appearance: none) {
+    //         img {
+    //             margin-right: 2.25vmax;
+    //         }
+    //     }
+    // }
     @media (max-width: $tablet-bp) {
         img {
             // min-width: 360px;            
@@ -113,7 +115,7 @@
         letter-spacing: 1px;            
         font-weight: 700;
         background: #BC0000;
-        padding: .75vmax 1.25vmax; 
+        padding: .8rem 1.25rem; 
         border-radius: .5rem;
         width: fit-content;       
         transition: .2s ease-in-out;
@@ -126,9 +128,14 @@
     }
 }
 @media (max-width: $tablet-bp) {
+    .div1 {
+        h2 {max-width: 65vw;}
+    }
     .div2 {
         span {
-            margin-top: 0;
+            padding: 0;
+            margin: 0;
+            margin-top: 2.5vmax;
         }
         p {
             max-width: 50ch !important;
@@ -138,9 +145,15 @@
     }
 }
 @media (max-width: $mobile-bp) {
+    .div1 {
+        h1 {
+            font-size: 2.75rem;
+        }
+    }
     .div2 {
         flex-direction: column !important;
-        // gap: .5vmax;
+
+
         p {
             max-width: 80vw !important;
             margin-top: 0;

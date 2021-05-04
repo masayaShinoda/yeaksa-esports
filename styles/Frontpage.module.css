@@ -4,9 +4,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -42,7 +39,7 @@
   letter-spacing: 1px;
   font-weight: 700;
   background: #BC0000;
-  padding: 1.25vmax 1.75vmax;
+  padding: .8rem 1.25rem;
   border-radius: .5rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -66,7 +63,7 @@
 
 @media (max-width: 1023px) {
   .frontpageContainer div p {
-    max-width: 65ch;
+    max-width: 50ch;
   }
 }
 
