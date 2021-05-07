@@ -57,12 +57,6 @@ export default function Roster() {
                                 {/* <i className={styles.fab fa-instagram}></i> */}
                             </a>
                         </div>
-                        <div className={styles.hexagonWrapper}>
-                            <a href="/roster-yeaksa-x-atlantic" className={styles.hexagon}>
-                            <img src="/roster-icon/roster-hexagon-icon-yeaksa-x-ag.png"></img>
-                                {/* <i className={styles.fab fa-instagram}></i> */}
-                            </a>
-                        </div>
                     </div>
                 </main>
 

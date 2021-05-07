@@ -215,18 +215,6 @@
   margin: 0 auto;
 }
 
-.hexagonWrapper:first-of-type .hexagon:hover, .hexagonWrapper:first-of-type .hexagon:active, .hexagonWrapper:first-of-type .hexagon:focus {
-  background: #757575;
-}
-
-.hexagonWrapper:nth-of-type(2n) .hexagon:hover, .hexagonWrapper:nth-of-type(2n) .hexagon:active, .hexagonWrapper:nth-of-type(2n) .hexagon:focus {
-  background: #757575;
-}
-
-.hexagonWrapper:nth-of-type(3n) .hexagon:hover, .hexagonWrapper:nth-of-type(3n) .hexagon:active, .hexagonWrapper:nth-of-type(3n) .hexagon:focus {
-  background: #757575;
-}
-
 .hexagonWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -235,6 +223,10 @@
   width: 22.0vw;
   height: 22.5vw;
   cursor: pointer;
+}
+
+.hexagonWrapper .hexagon:hover, .hexagonWrapper .hexagon:active, .hexagonWrapper .hexagon:focus {
+  background: #757575;
 }
 
 .hexagon {
