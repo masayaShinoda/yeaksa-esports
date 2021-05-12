@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import ReactPlayer from "react-player"
 import contentStyles from "../styles/content.module.css"
@@ -66,11 +67,12 @@ const Content = () => {
                     return (
                         <>
                             <div className={contentStyles.div1}>
-                                <h1>{data.content[0].heading}</h1>
+                                <Link href={`/news/${data.content[0].id}`}>
+                                    <h1 style={{cursor: `pointer`}} >{data.content[0].heading}</h1>
+                                </Link>
                                 {data.content[0].subheading ? <h2>{data.content[0].subheading}</h2> : null}
                             </div>
                             <div className={contentStyles.div2}>                            
-                            
                                 {data.content[1].singlephoto ? <img src={data.content[1].singlephoto.url} alt={data.content[1].singlephoto.url} /> : null}
 
                                 {data.content[1].video ? 
@@ -80,18 +82,18 @@ const Content = () => {
                                     {data.content[1].text ? 
                                         <>
                                             <p>{data.content[1].text}</p>
-                                            <a 
+                                            <Link 
                                                 href={`/news/${data.content[0].id}`} 
                                                 style={{maxWidth: `max-content`, fontWeight: `700`}}
                                             >
                                                 Read more
-                                            </a>
+                                            </Link>
                                         </>
                                     : null}
                                     {data.content[1].actionLink ? 
-                                    <a href={data.content[1].actionLink} className={contentStyles.actionBtn}>
+                                    <Link href={data.content[1].actionLink} className={contentStyles.actionBtn}>
                                         {data.content[1].actionText}
-                                    </a> : null}
+                                    </Link> : null}
                                     
                                 </span>
                                 
