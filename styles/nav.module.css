@@ -26,6 +26,7 @@
 .navContainer .logo {
   min-width: 15vmin;
   max-width: 15vmin;
+  cursor: pointer;
 }
 
 .navContainer nav a {

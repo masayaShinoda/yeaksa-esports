@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
-import Head from 'next/head'
-import Nav from "../components/nav.js"
-import Footer from "../components/footer.js"
-import styles from '../styles/Home.module.css'
+import Layout from "../components/layout"
 import rosterStyles from "../styles/roster.module.css"
 
 export default function rosterPubgm() {
@@ -45,20 +42,9 @@ export default function rosterPubgm() {
             console.log(error);
         });
     }, [])
-    console.log(playerData)
-    return (
-        <div className={styles.container}>
-        <Head>
-          <title>YeakSa E-sports</title>
-          {/* <link rel="icon" href="/favicon.ico" /> */}
-          <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-          <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        </Head>
-         <Nav />
-         
-        <div className={styles.background}></div>
 
-        <main className={styles.main} style={{justifyContent: `flex-start`}}>
+    return (
+        <Layout pageName="PUBGM Roster">            
             <div className={rosterStyles.upperContent}>
                 <a href="/members">
                     <h2 style={{margin: `0`}}>
@@ -104,16 +90,8 @@ export default function rosterPubgm() {
                     </div>
                     )
                     })
-                }                
-                
-
-
-
-
+                }
             </div>
-        </main>
-
-        <Footer />
-    </div>
+        </Layout>
     )
 }

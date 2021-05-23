@@ -1,15 +1,11 @@
 import { useState, useEffect } from "react";
-import Head from 'next/head'
-import Nav from "../components/nav.js"
-import Footer from "../components/footer.js"
-import styles from '../styles/Home.module.css'
+import Layout from "../components/layout"
 import rosterStyles from "../styles/roster.module.css"
 
 export default function rosterMlbb() {
     const token = '7d75f2d5a1e12e28d4ee89f229cdc5';
 
     const [playerData, setPlayerData] = useState((playerData) => {return null}); // by default there is no player data
-
     
     useEffect(() => {
         fetch(
@@ -45,20 +41,9 @@ export default function rosterMlbb() {
             console.log(error);
         });
     }, [])
-    console.log(playerData)
+    
     return (
-        <div className={styles.container}>
-        <Head>
-          <title>YeakSa E-sports</title>
-          {/* <link rel="icon" href="/favicon.ico" /> */}
-          <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-          <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        </Head>
-         <Nav />
-         
-        <div className={styles.background}></div>
-
-        <main className={styles.main} style={{justifyContent: `flex-start`}}>
+        <Layout pageName="MLBB Roster">
             <div className={rosterStyles.upperContent}>
                 <a href="/members">
                     <h2 style={{margin: `0`}}>
@@ -104,16 +89,8 @@ export default function rosterMlbb() {
                     </div>
                     )
                     })
-                }                
-                
-
-
-
-
+                }
             </div>
-        </main>
-
-        <Footer />
-    </div>
+        </Layout> 
     )
 }
