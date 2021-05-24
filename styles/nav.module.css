@@ -105,6 +105,7 @@
     height: 9.375vmax;
     border-radius: 100%;
     background: #BC0000;
+    z-index: 10;
     border: 0;
   }
   .openNavBtn span, .closeNavBtn span {
@@ -148,6 +149,7 @@
     display: none;
   }
   .navContainer nav {
+    z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
