@@ -64,13 +64,11 @@ export default function Layout({ children, pageName }) {
                         keywords="yeaksa team, team yeaksa, competitive gaming cambodia, e-sports cambodia, cambodian esports, cambodia esports, cambodia professional esports organization, esports organization in cambodia, csgo team cambodia, mlbb team cambodia, pubgm team cambodia, khmer esports organization, yeaksa gaming, yeaksa, yeaksa esports, yeaksa esports organization"
                     /> 
             }
-
             <Nav goDarkBtn={goDarkBtn} />
             <div className={styles.background + ` background`}></div>
             <main className={styles.main}>
                 {children}
             </main>
-
         </div>
     )
 }

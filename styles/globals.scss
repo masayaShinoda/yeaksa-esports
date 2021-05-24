@@ -45,31 +45,41 @@ p {
 
 
 // darkmode and light mode logic
+.background {     
+  height: 100%;
+  width: 100%;
+  z-index: -100;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 .container {
   .fa-moon, .fa-lightbulb {position: fixed; top: 2.5vmax; right: 2.5vmax}
   .fa-lightbulb {display: none}
   .fa-moon {display: inline-block}
   .background {
-    background: url("/web-bg-02_result.jpg");
-    height: 100%;
-    width: 100%;
-    z-index: -100;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;  
+    background-image: url("/web-bg-02_result.jpg");
+  }
+  @media (max-width: $mobile-bp) {
+    .navContainer {
+      nav {
+        color: #fcfcfc;
+        background: #212121;
+      }
+    }
   }
 }
 .container.dark {
   div, span, p, a, h1, h2, h3 {
     color: #fcfcfc;
   }
-  .background {
-    background: url("/web-bg-01_result.jpg");
-  }
   .fa-moon, .fa-lightbulb {color: #fcfcfc}
   .fa-lightbulb {display: inline-block}
   .fa-moon {display: none}
+  .background {
+    background-image: url("/web-bg-01_result.jpg");
+  }
 }

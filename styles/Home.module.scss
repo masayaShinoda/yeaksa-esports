@@ -1,15 +1,14 @@
 @import "./_variables.scss";
 
-  .container {
-    min-height: 100vh;    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    // border: 1px solid red;//debug
-  }
-  
+// darkmode and light mode logic
+.container {
+  min-height: 100vh;    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // border: 1px solid red;//debug
+}
 
 @media (max-width: $mobile-bp) {
   .container {
