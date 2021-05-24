@@ -40,18 +40,17 @@ export default function Layout({ children, pageName }) {
         // localStorage.setItem("darkmode", isDarkMode)
 
     }, [isDarkMode])
-
-
-    const goDarkBtn = <button onClick={() => {setDarkMode(!isDarkMode)}} className="goDarkBtn">
-                        <FontAwesomeIcon icon={faMoon} title="Lights off" style={{width: `1em`, maxWidth: `1em`}} />
-                        <FontAwesomeIcon icon={faLightbulb} title="Lights on" style={{width: `1em`, maxWidth: `1em`}} />
+    
+    const goDarkBtn = <button onClick={() => {setDarkMode(!isDarkMode)}} className="goDarkBtn" style={{background: 0, border: 0, fontSize: `1.25rem`, cursor: `pointer`}}>
+                        <FontAwesomeIcon icon={faMoon} title="Lights off" style={{width: `1.25rem`, maxWidth: `1.25rem`, maxHeight: `1.25rem`}} />
+                        <FontAwesomeIcon icon={faLightbulb} title="Lights on" style={{width: `1.25rem`, maxWidth: `1.25rem`, maxHeight: `1.25rem`}} />
                       </button>
                           
     return (
-        <div className={styles.container} id="container">
+        <div className={styles.container + ` container`} id="container">
             <Head>
-            <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-            <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+                <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+                <link rel="icon" href="/favicon.ico" type="image/x-icon" />
             </Head>
             {pageName ? 
                 <NextSeo 
@@ -66,8 +65,8 @@ export default function Layout({ children, pageName }) {
                     /> 
             }
 
-            <Nav />
-            <div className={styles.background}></div>
+            <Nav goDarkBtn={goDarkBtn} />
+            <div className={styles.background + ` background`}></div>
             <main className={styles.main}>
                 {children}
             </main>

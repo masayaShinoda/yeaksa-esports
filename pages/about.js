@@ -42,7 +42,7 @@ export default function About() {
                                     <img src="/sponsors/Logo-Fan-Sport-png - Copy.png" alt="Fan Sport" className={styles.logo} />
                                 </a>
                                 <a href="https://www.facebook.com/Good-Time-Hotel-Resort-Group-106046934410922">
-                                    <img src="/sponsors/GoodTimeGroup_White_Logo.png" alt="Good Time Group" className={styles.logo} />
+                                    <img src="/sponsors/GoodTimeGroup_Gold_Logo_result_result_result.png" alt="Good Time Group" className={styles.logo} />
                                 </a>
                                 <a href="https://www.facebook.com/BEES-FC-111744477257357">
                                     <img src="/sponsors/bees-logo.png" alt="Bees FC" className={styles.logo} />
@@ -75,7 +75,7 @@ export default function About() {
                                 <a 
                                     href="https://www.instagram.com/yeaksa.esports/"
                                     style={{display: `flex`, alignItems: `center`}}
-                                    >
+                                >
                                     <img src="./ig-clear.png" alt="Instagram" />
                                     <p>@yeaksa.official</p>
                                 </a>

@@ -14,6 +14,7 @@
             height: auto !important;
         }
     }
+    // fix maxwidth of actionBtns
 }
 .div1, .div2 {
     // border: 1px solid purple; //debug
@@ -31,9 +32,10 @@
     }
     h2 {
         margin: .5rem 0;
-        letter-spacing: 3px;
+        letter-spacing: 1px;
         font-size: 1.25rem;
-        font-weight: 400;
+        line-height: 1.25;
+        font-weight: 600;
     }
 }
 // @media not all and (min-resolution:.001dpcm) {
@@ -60,13 +62,11 @@
         max-width: 400px; //ultrawide fix
         object-fit: contain;        
     }
-    // @media not all and (min-resolution:.001dpcm) {
-    //     @supports (-webkit-appearance: none) {
-    //         img {
-    //             margin-right: 2.25vmax;
-    //         }
-    //     }
-    // }
+    a {
+        max-width: max-content;
+        font-weight: 700;
+    }
+
     @media (max-width: $tablet-bp) {
         img {
             // min-width: 360px;            
@@ -117,14 +117,15 @@
         background: #BC0000;
         padding: .8rem 1.25rem; 
         border-radius: .5rem;
+        color: #fcfcfc;
         width: fit-content;       
         transition: .2s ease-in-out;
-        box-shadow: 1px 2px 5px #212121;     
+        box-shadow: 1px 2px 5px rgba(33, 33, 33, .325);     
     }
     .actionBtn:hover,
     .actionBtn:active,
     .actionBtn:focus {
-        background: darken(#BC0000, 15%);
+        background: lighten(#BC0000, 5%);
     }
 }
 @media (max-width: $tablet-bp) {
@@ -135,12 +136,12 @@
         span {
             padding: 0;
             margin: 0;
-            margin-top: 2.5vmax;
+            margin-top: 3.25vmax;
+            // border: 1px solid purple; //debug
         }
         p {
-            max-width: 50ch !important;
+            max-width: 45ch !important;
             margin-top: 0;
-            // border: 1px solid purple; //debug
         }
     }
 }

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 .div1, .div2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,6 +47,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
   background: #005E7A;
+  color: #fcfcfc;
   cursor: pointer;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -71,6 +73,8 @@
 
 .div1 .itemBox .buyBtn a h2, .div2 .itemBox .buyBtn a h2 {
   font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
   margin: 0;
   padding: 0 .5vmax;
   border-left: 1px solid #fcfcfc;

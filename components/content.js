@@ -49,7 +49,6 @@ const Content = () => {
         .then(res => res.json())
         .then((res) => {
             setHomeData(res.data["allHomepages"])
-            console.log(res.data["allHomepages"])
         })
         .catch((error) => {
             console.log(error);
@@ -65,7 +64,7 @@ const Content = () => {
             {homeData &&
                 homeData.map(data => {
                     return (
-                        <>
+                        <div style={{margin: `3.25vh 0`}}>
                             <div className={contentStyles.div1}>
                                 <Link href={`/news/${data.content[0].id}`}>
                                     <h1 style={{cursor: `pointer`}} >{data.content[0].heading}</h1>
@@ -82,24 +81,21 @@ const Content = () => {
                                     {data.content[1].text ? 
                                         <>
                                             <p>{data.content[1].text}</p>
-                                            <Link 
-                                                href={`/news/${data.content[0].id}`} 
-                                                style={{maxWidth: `max-content`, fontWeight: `700`}}
-                                            >
+                                            <Link href={`/news/${data.content[0].id}`}>
                                                 Read more
                                             </Link>
                                         </>
                                     : null}
                                     {data.content[1].actionLink ? 
-                                    <Link href={data.content[1].actionLink} className={contentStyles.actionBtn}>
+                                    <a href={data.content[1].actionLink} className={contentStyles.actionBtn}>
                                         {data.content[1].actionText}
-                                    </Link> : null}
+                                    </a> : null}
                                     
                                 </span>
                                 
                             </div>
 
-                        </>
+                        </div>
                     )
                 })
             }

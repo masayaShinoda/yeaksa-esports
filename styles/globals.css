@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -9,7 +10,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -22,28 +23,74 @@ a {
           box-sizing: border-box;
 }
 
-div, span, p, a, h1, h2, h3 {
-  color: #fcfcfc;
-}
-
 h1 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 3.25rem;
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.45rem;
   font-weight: 800;
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 @media (max-width: 480px) {
   h1, h2, p, a, img {
     max-width: 80vw;
   }
+}
+
+.container .fa-moon, .container .fa-lightbulb {
+  position: fixed;
+  top: 2.5vmax;
+  right: 2.5vmax;
+}
+
+.container .fa-lightbulb {
+  display: none;
+}
+
+.container .fa-moon {
+  display: inline-block;
+}
+
+.container .background {
+  background: url("/web-bg-02_result.jpg");
+  height: 100%;
+  width: 100%;
+  z-index: -100;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.container.dark div, .container.dark span, .container.dark p, .container.dark a, .container.dark h1, .container.dark h2, .container.dark h3 {
+  color: #fcfcfc;
+}
+
+.container.dark .background {
+  background: url("/web-bg-01_result.jpg");
+}
+
+.container.dark .fa-moon, .container.dark .fa-lightbulb {
+  color: #fcfcfc;
+}
+
+.container.dark .fa-lightbulb {
+  display: inline-block;
+}
+
+.container.dark .fa-moon {
+  display: none;
 }
 /*# sourceMappingURL=globals.css.map */

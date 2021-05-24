@@ -2,15 +2,13 @@
 
 .frontpageContainer {
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     width: 80vw;
     padding: 2.5vh 0;
     gap: 2.5vmax;
-    // border: 1px solid red; //debug
-
-    
+    // border: 1px solid red; //debug    
     div {
         // max-width: 40%;
         display: flex;
@@ -18,10 +16,11 @@
         // margin: 3.25vmax 0;
         h1 {
             margin-top: 0;
+            line-height: 1.1;
         }
         p {
             max-width: 45ch;
-            line-height: 1.8;
+            line-height: 1.5;
         }
         .actionBtn {
             font-size: 1.1rem;
@@ -30,7 +29,7 @@
             font-weight: 700;
             background: #BC0000;
             padding: .8rem 1.25rem; 
-
+            color: #fcfcfc;
             border-radius: .5rem;
             width: fit-content;       
             transition: .2s ease-in-out;

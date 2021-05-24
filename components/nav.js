@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link"
 import styles from "../styles/nav.module.css"
 
-export default function Nav() {
+export default function Nav({ goDarkBtn }) {
     function openNav() {
         document.getElementById("nav").style.display = "flex"
         document.getElementById("openNavBtn").style.display = "none"
@@ -44,7 +44,6 @@ export default function Nav() {
         .catch((error) => {
             console.log(error);
         });
-         
     }, [])
         
     
@@ -54,46 +53,46 @@ export default function Nav() {
                 <span></span>
                 <span></span>
                 <span></span>
-            </button>
+            </button>   
             <button id="closeNavBtn" onClick={closeNav} className={styles.closeNavBtn} style={{display: `none`}}>
                 <div>
                     <span></span>
                     <span></span>
                 </div>
             </button>
-        <div className={styles.navContainer} id="nav">            
-            <Link className={styles.logoBtn} href="/">
-                <img className={styles.logo} src="/256w/logo-256.png" alt="Logo" />
-                {/* <img className={styles.logo} src="/428w/yeaksa-monochrome-06_result.png" alt="Logo" /> */}
-            </Link>
-            <nav>
-                <Link href="/">Home</Link>
-                <Link href="/members">Members</Link>    
-
-                {/* <span className={styles.navDropDown}>
-                    <a style={{display: `inline-block`}} href="/members">Members</a>
-                    <ul className={styles.dropDown}>
-                        <li>
-                            <a href="/roster-csgo">CS:GO</a>                            
-                        </li>
-                        <li>
-                            <a href="/roster-pubg-mobile">PUBG Mobile</a>                            
-                        </li>
-                        <li>
-                            <a href="/roster-mlbb">Mobile Legends</a>                            
-                        </li>
-                        <li>
-                            <a href="/content-creators">Content Creators</a>                            
-                        </li>
-                    </ul>
-                </span> */}
-                <Link href="/shop">Shop</Link>    
-                <Link href="/about">About</Link>
-                {liveData.liveStatus &&
-                 <Link href={liveData.link}>Live &#128308;</Link> 
-                }
-            </nav>
-        </div>
+            <div className={styles.navContainer + ` navContainer`} id="nav">            
+                <Link className={styles.logoBtn} href="/">
+                    <img className={styles.logo} src="/256w/logo-256.png" alt="Logo" />
+                    {/* <img className={styles.logo} src="/428w/yeaksa-monochrome-06_result.png" alt="Logo" /> */}
+                </Link>
+                <nav>
+                    <Link href="/">Home</Link>
+                    <Link href="/members">Members</Link>
+                    {/* <span className={styles.navDropDown}>
+                        <a style={{display: `inline-block`}} href="/members">Members</a>
+                        <ul className={styles.dropDown}>
+                            <li>
+                                <a href="/roster-csgo">CS:GO</a>                            
+                            </li>
+                            <li>
+                                <a href="/roster-pubg-mobile">PUBG Mobile</a>                            
+                            </li>
+                            <li>
+                                <a href="/roster-mlbb">Mobile Legends</a>                            
+                            </li>
+                            <li>
+                                <a href="/content-creators">Content Creators</a>                            
+                            </li>
+                        </ul>
+                    </span> */}
+                    <Link href="/shop">Shop</Link>    
+                    <Link href="/about">About</Link>
+                    {liveData.liveStatus &&
+                    <Link href={liveData.link}>Live &#128308;</Link> 
+                    }
+                    {goDarkBtn}
+                </nav>
+            </div>
         </div>
     )
 }

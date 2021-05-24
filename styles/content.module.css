@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 .contentContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,9 +42,10 @@
 
 .div1 h2 {
   margin: .5rem 0;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-size: 1.25rem;
-  font-weight: 400;
+  line-height: 1.25;
+  font-weight: 600;
 }
 
 .div2 {
@@ -67,6 +69,13 @@
   max-width: 400px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.div2 a {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  font-weight: 700;
 }
 
 @media (max-width: 1023px) {
@@ -117,19 +126,20 @@
   background: #BC0000;
   padding: .8rem 1.25rem;
   border-radius: .5rem;
+  color: #fcfcfc;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
-  -webkit-box-shadow: 1px 2px 5px #212121;
-          box-shadow: 1px 2px 5px #212121;
+  -webkit-box-shadow: 1px 2px 5px rgba(33, 33, 33, 0.325);
+          box-shadow: 1px 2px 5px rgba(33, 33, 33, 0.325);
 }
 
 .div2 .actionBtn:hover,
 .div2 .actionBtn:active,
 .div2 .actionBtn:focus {
-  background: #700000;
+  background: #d60000;
 }
 
 @media (max-width: 1023px) {
@@ -139,10 +149,10 @@
   .div2 span {
     padding: 0;
     margin: 0;
-    margin-top: 2.5vmax;
+    margin-top: 3.25vmax;
   }
   .div2 p {
-    max-width: 50ch !important;
+    max-width: 45ch !important;
     margin-top: 0;
   }
 }
