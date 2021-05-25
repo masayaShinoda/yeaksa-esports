@@ -73,14 +73,13 @@ export default function rosterCsgo() {
                         </div>
                         <div className={rosterStyles.info}>
                             <span style={{display: `flex`}}>
-                                <h1>{data.firstname}</h1>
-                                <h1 style={{
-                                    marginLeft: `1.25vmax`,
-                                    marginRight: `1.25vmax`
-                                    }}>
+                                <h1>
+                                    {data.firstname}
+                                    {" "}
                                     "{data.ign}"
+                                    {" "}
+                                    {data.secondname}
                                 </h1>
-                                <h1>{data.secondname}</h1>
                             </span>
                             <h2>{data.role}</h2>
                             <span className={rosterStyles.social}>
