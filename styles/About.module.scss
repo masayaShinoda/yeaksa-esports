@@ -1,5 +1,12 @@
 @import "./_variables.scss";
 
+.achievementsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5vh 10vw;
+    width: 100%;
+}
 .aboutContainer {
     display: flex;
     justify-content: flex-start;

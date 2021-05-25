@@ -25,6 +25,7 @@
 
 .navContainer .logo {
   min-width: 15vmin;
+  min-height: 15vmin;
   max-width: 15vmin;
   cursor: pointer;
 }
@@ -105,7 +106,7 @@
     height: 9.375vmax;
     border-radius: 100%;
     background: #BC0000;
-    z-index: 10;
+    z-index: 100;
     border: 0;
   }
   .openNavBtn span, .closeNavBtn span {

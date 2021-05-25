@@ -1,16 +1,20 @@
 import Layout from "../components/layout"
+import Timeline from "../components/timeline"
 import styles from "../styles/Home.module.css"
 import aboutStyles from "../styles/About.module.css"
+import timelineStyles from "../styles/Timeline.module.css"
 
 export default function About() {
     return (
         <Layout pageName="About Us">
+            <div className={aboutStyles.achievementsContainer}>
+                <h1>Achievements</h1>
+                <Timeline />
+
+            </div>
             <div className={aboutStyles.aboutContainer}>
-                
                 <div className={aboutStyles.div1}>
-                    <h1>
-                        About us
-                    </h1>
+                    <h1>About us</h1>
                     <p>
                         YeakSa Esports Organization<sup>&#169;</sup> is composed of competitive gaming teams in Cambodia competing in popular Esports titles. Originally founded in 2019 with three original members, we have since grown to become a model for competitive Esports Teams in Cambodia with our distinguished tournament participations, and high-quality production during each and every one of our events.
                     </p>
