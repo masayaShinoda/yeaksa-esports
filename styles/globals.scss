@@ -1,5 +1,19 @@
 @import "./_variables.scss";
 
+#nprogress .spinner  {
+  display: none;
+  width: 2.5vmax !important;
+  height: 2.5vmax !important;
+  background-position: top;
+  background-clip: border-box;
+  background-image: url("/yeak-retouched-no-text-compressed-01.svg") !important;
+  background-size: contain !important;
+  transition: .2s ease-out;
+}
+#nprogress .spinner-icon {
+  display: none;
+}
+
 * {
   box-sizing: border-box
 }

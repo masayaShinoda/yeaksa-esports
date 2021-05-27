@@ -1,0 +1,33 @@
+@import "./_variables.scss";
+
+.accordionContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // border: 1px solid red; //debug
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 100%;
+        max-height: fit-content;
+        line-height: 0;
+        padding: 1.1rem 0;
+        background: 0;
+        border: 0;
+        span {
+            display: flex;
+            width: max-content;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.25rem;
+            padding: .5rem 1.1rem;
+            h1,h2 {margin-right: 2.5vmax}
+        }
+    }
+    .accordionContent {
+        display: flex;
+        flex-direction: column;
+    }
+}

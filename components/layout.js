@@ -26,8 +26,7 @@ export default function Layout({ children, pageName }) {
         }
     }, [])
 
-    useEffect(() => {       
-
+    useEffect(() => {
         if(isDarkMode) {
             document.getElementById("container").classList.add("dark")
             localStorage.setItem("darkmode", "dark")

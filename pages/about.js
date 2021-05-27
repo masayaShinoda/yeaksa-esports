@@ -2,15 +2,13 @@ import Layout from "../components/layout"
 import Timeline from "../components/timeline"
 import styles from "../styles/Home.module.css"
 import aboutStyles from "../styles/About.module.css"
-import timelineStyles from "../styles/Timeline.module.css"
 
 export default function About() {
     return (
         <Layout pageName="About Us">
             <div className={aboutStyles.achievementsContainer}>
-                <h1>Achievements</h1>
+                {/* <h1>Achievements</h1> */}
                 <Timeline />
-
             </div>
             <div className={aboutStyles.aboutContainer}>
                 <div className={aboutStyles.div1}>
