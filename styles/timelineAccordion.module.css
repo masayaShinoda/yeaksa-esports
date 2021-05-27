@@ -51,7 +51,7 @@
 }
 
 .accordionContainer button span h1, .accordionContainer button span h2 {
-  margin-right: 2.5vmax;
+  margin-right: 2.5vmin;
 }
 
 .accordionContainer .accordionContent {
