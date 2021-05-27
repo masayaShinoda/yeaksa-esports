@@ -72,7 +72,7 @@ const Content = () => {
                                 {data.content[0].subheading ? <h2>{data.content[0].subheading}</h2> : null}
                             </div>
                             <div className={contentStyles.div2}>                            
-                                {data.content[1].singlephoto ? <img src={data.content[1].singlephoto.url} alt={data.content[1].singlephoto.url} /> : null}
+                                {data.content[1].singlephoto ? <img src={data.content[1].singlephoto.url} alt={data.content[1].singlephoto.alt} /> : null}
 
                                 {data.content[1].video ? 
                                    <ReactPlayer url={data.content[1].video.url} />                                    

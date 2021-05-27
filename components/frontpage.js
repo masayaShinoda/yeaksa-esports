@@ -8,7 +8,7 @@ export default function Frontpage() {
                 <p>Saying hello to the Cambodian E-sports scene, YeakSa is back prepared and up for the challenge.</p>                
                 <a className={styles.actionBtn} href="/members">See Our Roster &#187;</a>
             </div>
-            <iframe style={{marginTop: `2.5vmax`}} width="560" height="315" src="https://www.youtube-nocookie.com/embed/HNbO-oSpdjo?controls=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe style={{marginTop: `2.5vmax`}} width="560" height="315" src="https://www.youtube-nocookie.com/embed/HNbO-oSpdjo?controls=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen title="Yeaksa introduction video"></iframe>
    
             <Content />
         </div>
