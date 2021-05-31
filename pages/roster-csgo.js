@@ -30,6 +30,9 @@ export default function rosterCsgo() {
                       role
                       stream
                       active
+                      profpic {
+                          url
+                        }
                       } 
                   }`
               }),
@@ -65,11 +68,13 @@ export default function rosterCsgo() {
                             return (
                                 <div className={rosterStyles.playerCard}>
                         <div>
-                            <img 
+                            {data.profpic ? 
+                            <img src={data.profpic.url} alt={data.ign} />
+                            : <img 
                                 src="/logo-with-bg.jpg" 
                                 style={{width: `15vmax`}}
                                 className={rosterStyles.avatar}
-                                />
+                            />}
                         </div>
                         <div className={rosterStyles.info}>
                             <span style={{display: `flex`}}>

@@ -29,6 +29,9 @@ export default function rosterPubgm() {
                       instagram
                       role
                       stream
+                      profpic {
+                          url
+                        }
                       } 
                   }`
               }),
@@ -63,10 +66,13 @@ export default function rosterPubgm() {
                     return (
                         <div className={rosterStyles.playerCard}>
                         <div>
-                            <img 
+                        {data.profpic ? 
+                            <img src={data.profpic.url} alt={data.ign} />
+                            : <img 
                                 src="/logo-with-bg.jpg" 
                                 style={{width: `15vmax`}}
-                            />
+                                className={rosterStyles.avatar}
+                            />}
                         </div>
                         <div className={rosterStyles.info}>
                             <span style={{display: `flex`}}>
