@@ -92,9 +92,9 @@ export default function rosterPubgm() {
                             <h2>{data.role}</h2>
                             <span className={rosterStyles.social}>
                                 {data.instagram ? <p>Instagram:</p> : null}
-                                <b><p>{data.instagram}</p></b>
+                                <p>{data.instagram}</p>
                                 {data.facebook ? <p>Facebook:</p> : null}
-                                <b><p>{data.facebook}</p></b>
+                                <p>{data.facebook}</p>
                             </span>
                         </div>
                     </div>
