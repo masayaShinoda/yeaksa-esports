@@ -38,6 +38,7 @@
 
 .avatar {
   margin: 0 2.5vmin;
+  max-width: 15vmax;
 }
 
 .info {
@@ -150,8 +151,21 @@
             justify-content: center;
     padding: 2.5vmax 0;
   }
+  .avatarContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
   .avatar {
     margin: 0 2.5vmin;
+    max-width: 60%;
   }
   .info {
     display: -webkit-box;

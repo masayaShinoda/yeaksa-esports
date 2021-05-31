@@ -33,7 +33,9 @@
   }
   .avatar {
     margin: 0 2.5vmin;  
+    max-width: 15vmax;
   }
+  
   .info {
     width: 80%;
     padding: 0 2.5vmax;
@@ -133,8 +135,11 @@
       padding: 2.5vmax 0;
       // border: 1px solid blue; //debug
     }
+    .avatarContainer {display: flex; justify-content: center; align-items: center; width: 100%;}
     .avatar {
-      margin: 0 2.5vmin;  
+
+      margin: 0 2.5vmin;
+      max-width: 60%;
     }
     .info {
       display: flex;

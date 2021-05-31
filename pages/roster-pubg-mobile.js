@@ -65,9 +65,13 @@ export default function rosterPubgm() {
                     playerData.map(data => {
                     return (
                         <div className={rosterStyles.playerCard}>
-                        <div>
+                        <div className={rosterStyles.avatarContainer}>
                         {data.profpic ? 
-                            <img src={data.profpic.url} alt={data.ign} />
+                            <img
+                                src={data.profpic.url}
+                                alt={data.ign} 
+                                className={rosterStyles.avatar}                            
+                            />
                             : <img 
                                 src="/logo-with-bg.jpg" 
                                 style={{width: `15vmax`}}

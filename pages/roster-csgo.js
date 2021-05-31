@@ -67,9 +67,13 @@ export default function rosterCsgo() {
                         if (data.active) {  
                             return (
                                 <div className={rosterStyles.playerCard}>
-                        <div>
-                            {data.profpic ? 
-                            <img src={data.profpic.url} alt={data.ign} />
+                        <div className={rosterStyles.avatarContainer}>
+                        {data.profpic ? 
+                            <img
+                                src={data.profpic.url}
+                                alt={data.ign} 
+                                className={rosterStyles.avatar}                            
+                            />
                             : <img 
                                 src="/logo-with-bg.jpg" 
                                 style={{width: `15vmax`}}

@@ -64,7 +64,7 @@ export default function rosterYeaksaXAtlantic() {
                     playerData.map(data => {
                     return (
                         <div className={rosterStyles.playerCard}>
-                        <div>
+                        <div className={rosterStyles.avatarContainer}>
                         {data.profpic ? 
                             <img
                                 src={data.profpic.url}
