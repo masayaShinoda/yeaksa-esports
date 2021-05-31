@@ -92,9 +92,9 @@ export default function rosterCsgo() {
                             </span>
                             <h2>{data.role}</h2>
                             <span className={rosterStyles.social}>
-                                {data.instagram ? <p>Instagram:</p> : null}
+                                {data.instagram ? <p>Instagram:</p> : <p></p>}
                                 <p>{data.instagram}</p>
-                                {data.facebook ? <p>Facebook:</p> : null}
+                                {data.facebook ? <p>Facebook:</p> : <p></p>}
                                 <p>{data.facebook}</p>
                             </span>
                         </div>

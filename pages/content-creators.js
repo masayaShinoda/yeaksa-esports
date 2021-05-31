@@ -94,11 +94,11 @@ export default function contentCreators() {
                             </span>
                             <h2>{data.role}</h2>
                             <span className={rosterStyles.social}>
-                                {data.instagram ? <p>Instagram:</p> : null}
-                                <b><p>{data.instagram}</p></b>
-                                {data.facebook ? <p>Facebook:</p> : null}
-                                <b><p>{data.facebook}</p></b>
-                                {data.streamLink ? <b><a href={data.streamLink}><p>Stream Link</p></a></b> : null}                                
+                                {data.instagram ? <p>Instagram:</p> : <p></p>}
+                                <p>{data.instagram}</p>
+                                {data.facebook ? <p>Facebook:</p> : <p></p>}
+                                <p>{data.facebook}</p>
+                                {data.streamLink ? <a href={data.streamLink}>Stream Link</a> : null}                                
                             </span>
                         </div>
                     </div>
