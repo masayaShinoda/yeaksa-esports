@@ -1,12 +1,96 @@
+import { useState, useEffect } from "react";
 import timelineStyles from "../styles/Timeline.module.css"
 import TimelineAccordion from "./timelineAccordion"
 
 export default function Timeline() {
-    
+    const token = '7d75f2d5a1e12e28d4ee89f229cdc5';
+
+    const [timelineData, setTimelineData] = useState((timelineData) => {return null}); // by default there is no data
+
+    useEffect(() => {
+        fetch(
+            'https://graphql.datocms.com/',
+            {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'Authorization': `Bearer ${token}`,
+              },
+              body: JSON.stringify({
+                query: `{ 
+                    allAchievements(orderBy: date_ASC) {
+                        id
+                        date
+                        achievementName
+                        achievementDescription
+                        left
+                        right
+                      }
+                  }`
+              }),
+            }
+        )
+        .then(res => res.json())
+        .then((res) => {
+            setTimelineData(res.data["allAchievements"])
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+    }, [])
+    console.log(timelineData)
+
+
     return (
         <TimelineAccordion>
             <ul className={timelineStyles.timeline}>
-                {/* <!-- Item 1 --> */}
+            {timelineData && 
+                    timelineData.map(data => {
+                        if(data.left) {
+                            return (
+                            <li>
+                                <div className={timelineStyles.direction_l}>
+                                    <div className={timelineStyles.flag_wrapper}>
+                                        <span className={timelineStyles.flag}>
+                                            {data.achievementName}
+                                        </span>
+                                        <span className={timelineStyles.time_wrapper}>
+                                            <span className={timelineStyles.time}>
+                                                {data.date}
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div className={timelineStyles.desc}>
+                                        {data.achievementDescription}                                        
+                                    </div>
+                                </div>
+                            </li>
+                            )
+                        }
+                        if(data.right) {
+                            return (
+                            <li>
+                                <div className={timelineStyles.direction_r}>
+                                    <div className={timelineStyles.flag_wrapper}>
+                                        <span className={timelineStyles.flag}>
+                                            {data.achievementName}
+                                        </span>
+                                        <span className={timelineStyles.time_wrapper}>
+                                            <span className={timelineStyles.time}>
+                                                {data.date}
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div className={timelineStyles.desc}>
+                                        {data.achievementDescription}
+                                    </div>
+                                </div>
+                            </li>
+                            )
+                        }
+                    })
+                }
                 <li>
                     <div className={timelineStyles.direction_r}>
                         <div className={timelineStyles.flag_wrapper}>
@@ -24,10 +108,9 @@ export default function Timeline() {
                         </div>
                     </div>
                 </li>
-            
-                {/* <!-- Item 2 --> */}
+
                 <li>
-                <div className={timelineStyles.direction_l}>
+                    <div className={timelineStyles.direction_l}>
                         <div className={timelineStyles.flag_wrapper}>
                             <span className={timelineStyles.flag}>
                                 Startup
@@ -42,7 +125,11 @@ export default function Timeline() {
                             Yeaksa was formerly a local CS:GO team in 2020. Then we became an esports organization.
                         </div>
                     </div>
-                </li>
+                </li>                
+
+            
+
+
             
             </ul>
         </TimelineAccordion>
