@@ -5,8 +5,9 @@
   min-height: 100vh;    
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
+  // width: 100%;
   // border: 1px solid red;//debug
 }
 
@@ -21,12 +22,20 @@
 
 
   .main {
-    padding: 4.25vh 0;
-    flex: 1;
+    // flex: 1;
     display: flex;
     flex-direction: column;
     // justify-content: center;
     align-items: center;
+    width: 100%;
+    padding: 4.25vh 0;
+  }
+  @media (max-width: $tablet-bp) {
+    .main {
+      padding: 4.25vh 0;
+      // justify-content: flex-start;
+
+    }
   }
 
 

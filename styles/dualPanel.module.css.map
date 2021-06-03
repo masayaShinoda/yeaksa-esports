@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,uEAAI;AACZ,OAAO,CAAC,uIAAI;AACZ,OAAO,CAAC,mJAAI;ADAZ,AAAA,mBAAmB,CAAC;EAChB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,IAAI;CAElB;;AACD,AAAA,aAAa,CAAC;EACV,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,MAAM;CAEzB",
+    "sources": [
+        "dualPanel.module.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "dualPanel.module.css"
+}

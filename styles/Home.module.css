@@ -10,9 +10,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -28,10 +25,6 @@
 }
 
 .main {
-  padding: 4.25vh 0;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,6 +35,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  padding: 4.25vh 0;
+}
+
+@media (max-width: 1023px) {
+  .main {
+    padding: 4.25vh 0;
+  }
 }
 
 .title a {
