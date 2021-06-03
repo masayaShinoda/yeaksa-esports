@@ -9,38 +9,48 @@
 
 <url>
   <loc>https://yeaksa-esports.com/</loc>
-  <lastmod>2021-01-31T14:19:55+00:00</lastmod>
+  <lastmod>2021-06-03T12:01:55+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://yeaksa-esports.com/roster</loc>
-  <lastmod>2021-01-31T14:19:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://yeaksa-esports.com/roster-csgo</loc>
-  <lastmod>2021-01-31T14:19:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://yeaksa-esports.com/roster-pubg-mobile</loc>
-  <lastmod>2021-01-31T14:19:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://yeaksa-esports.com/roster-mlbb</loc>
-  <lastmod>2021-01-31T14:19:55+00:00</lastmod>
+  <loc>https://yeaksa-esports.com/members</loc>
+  <lastmod>2021-06-03T12:01:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://yeaksa-esports.com/shop</loc>
-  <lastmod>2021-01-31T14:19:55+00:00</lastmod>
+  <lastmod>2021-06-03T12:01:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://yeaksa-esports.com/about</loc>
-  <lastmod>2021-01-31T14:19:55+00:00</lastmod>
+  <lastmod>2021-06-03T12:01:55+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yeaksa-esports.com/roster-csgo</loc>
+  <lastmod>2021-06-03T12:01:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yeaksa-esports.com/roster-valorant</loc>
+  <lastmod>2021-06-03T12:01:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yeaksa-esports.com/roster-mlbb</loc>
+  <lastmod>2021-06-03T12:01:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yeaksa-esports.com/roster-pubg-mobile</loc>
+  <lastmod>2021-06-03T12:01:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yeaksa-esports.com/content-creators</loc>
+  <lastmod>2021-06-03T12:01:55+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
