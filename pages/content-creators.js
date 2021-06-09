@@ -20,7 +20,7 @@ export default function contentCreators() {
               },
               body: JSON.stringify({
                 query: `{ 
-                    allContentCreators { 
+                    allStaffs { 
                         id
                         ign
                         instagram
@@ -39,7 +39,7 @@ export default function contentCreators() {
         )
         .then(res => res.json())
         .then((res) => {
-            setPlayerData(res.data["allContentCreators"])
+            setPlayerData(res.data["allStaffs"])
         })
         .catch((error) => {
             console.log(error);
