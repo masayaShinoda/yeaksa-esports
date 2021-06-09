@@ -47,7 +47,7 @@ export default function contentCreators() {
     }, [])
 
     return (
-        <Layout pageName="Content Creators">
+        <Layout pageName="Staff">
             <div className={rosterStyles.upperContent}>
                 <a href="/members">
                     <h2 style={{margin: `0`}}>
@@ -57,7 +57,7 @@ export default function contentCreators() {
                 <p 
                     style={{margin: `0`, fontSize: `2.25rem`, fontWeight: 700,}}
                 >
-                    Content Creators
+                    Yeaksa's Staff
                 </p>
             </div>
             <div className={rosterStyles.content} style={{marginTop: `1.25vmax`}}>

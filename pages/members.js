@@ -33,7 +33,7 @@ export default function Members() {
                 </div>
                 <div className={styles.hexagonWrapper}>
                     <a href="/content-creators" className={styles.hexagon}>
-                    <img src="/roster-icon/roster-hexagon-icon-concre.png"></img>
+                    <img src="/roster-icon/roster-hexagon-icon-staff.png"></img>
                         {/* <i className={styles.fab fa-instagram}></i> */}
                     </a>
                 </div>
