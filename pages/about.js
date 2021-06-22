@@ -22,7 +22,13 @@ export default function About() {
                         Our partners
                     </h1>
                     <div className={aboutStyles.sponsorLogosContainer}>
-                        <a href="https://www.facebook.com/fansportstore">
+                        <a href="https://www.facebook.com/MoonMalyaStore">
+                            <img src="/sponsors/logo-transparent-bg_result.webp" alt="Moon Malya Store" className={styles.logo} />
+                        </a>
+                        <a href="https://www.facebook.com/Mongkol.Building.Services">
+                            <img src="/sponsors/mongkol-building-logocropped-whitdropshadow.png" alt="The Mongkul Building" className={styles.logo} />
+                        </a>
+                        {/* <a href="https://www.facebook.com/fansportstore">
                             <img src="/sponsors/Logo-Fan-Sport-png - Copy.png" alt="Fan Sport" className={styles.logo} />
                         </a>
                         <a href="https://www.facebook.com/Good-Time-Hotel-Resort-Group-106046934410922">
@@ -30,7 +36,7 @@ export default function About() {
                         </a>
                         <a href="https://www.facebook.com/BEES-FC-111744477257357">
                             <img src="/sponsors/bees-logo.png" alt="Bees FC" className={styles.logo} />
-                        </a>
+                        </a> */}
                     </div>
                 </div>
                 <div className={aboutStyles.div3}>
