@@ -18,6 +18,7 @@ export default function Qr() {
 
     return (
         <Layout pageName="QR">
+            <h1>YeakSa_5G</h1>
             <p>
                 Wifi password:
             </p>
