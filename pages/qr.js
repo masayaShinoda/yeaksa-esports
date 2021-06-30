@@ -26,7 +26,8 @@ export default function Qr() {
                     style={{
                         fontSize: `1.8rem`,
                         margin: `.8rem 0`,
-                        padding: `.25rem .8rem`
+                        padding: `.25rem .8rem`,
+                        maxWidth: `90vw`
                     }}></input>
                 <button 
                     onClick={() => copyToClipboard()}
