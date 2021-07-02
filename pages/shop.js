@@ -7,10 +7,10 @@ export default function Shop() {
     
     return (
         <Layout pageName="Shop">
-            <h1 id="memberships">Memberships</h1>
+            {/* <h1 id="memberships">Memberships</h1>
             <div className={shopStyles.div2}>
                 <Memberships />
-            </div>
+            </div> */}
             <h1 id="merchandise">Merchandise</h1>
             <div className={shopStyles.div1}>
                 <Merch />

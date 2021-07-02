@@ -76,8 +76,7 @@
   font-weight: 600;
   text-transform: uppercase;
   margin: 0;
-  padding: 0 .5vmax;
-  border-left: 1px solid #fcfcfc;
+  padding: .5vmax .8vmax;
 }
 
 .div1 .itemBox .buyBtn:hover, .div2 .itemBox .buyBtn:hover {
@@ -154,8 +153,7 @@
   .div1 .itemBox .buyBtn a h2, .div2 .itemBox .buyBtn a h2 {
     font-size: 1.25rem;
     margin: 0;
-    padding: 0 .5vmax;
-    border-left: 1px solid #fcfcfc;
+    padding: .5vmax 1.5vmax;
   }
   .div1 .itemBox .buyBtn:hover, .div2 .itemBox .buyBtn:hover {
     -webkit-box-shadow: 1px 1px 5px rgba(150, 150, 150, 0.75);

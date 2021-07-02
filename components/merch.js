@@ -22,6 +22,8 @@ export default function Merch() {
                         itemName
                         price
                         details
+                        category
+                        instock
                         displayImg {
                             url
                             alt
@@ -44,24 +46,27 @@ export default function Merch() {
     return (
         <>
             {merchData &&
-                merchData.map(data => {
-                    return (
-                        <div className={shopStyles.itemBox}>
-                            <img src={data.displayImg.url} alt={data.displayImg.alt}/>
-                            <h1 className={shopStyles.itemName}>{data.itemName}</h1>
-                            <p className={shopStyles.details}>{data.details}</p>
-                            <span style={{display: `flex`, alignItems: `center`, gap: `1.25vmax`}}>
-                                <p className={shopStyles.price}>{data.price}</p>
-                                <span className={shopStyles.buyBtn}>
-                                    <a href="/jersey-form">
-                                        <img className={shopStyles.icon} src="/icons/aba.jpg" alt=""/>
-                                        <h2>Buy</h2>
-                                    </a>
-                                </span>
+                merchData.map(data => 
+                    {
+                        if(data.instock) {
+                            return (
+                                <div className={shopStyles.itemBox}>
+                                    <img src={data.displayImg.url} alt={data.displayImg.alt}/>
+                                    <h1 className={shopStyles.itemName}>{data.itemName}</h1>
+                                    <p className={shopStyles.details}>{data.details}</p>
+                                    <span style={{display: `flex`, alignItems: `center`, gap: `1.25vmax`}}>
+                                        <p className={shopStyles.price}>{data.price}</p>
+                                        <span className={shopStyles.buyBtn}>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf8jxpED9dfeq9ADtAGss4rIv9oUtCmpqmIOeaVeS29PyTN3w/viewform?usp=sf_link">
+                                                {/* <img className={shopStyles.icon} src="/icons/aba.jpg" alt=""/> */}
+                                                <h2>Buy</h2>
+                                            </a>
+                                        </span>
 
-                            </span>
-                        </div>
-                    )
+                                    </span>
+                                </div>
+                            )
+                    }
                 })
             }        
         </>
