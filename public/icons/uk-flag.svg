@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 74.6627">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+      }
+
+      .b {
+        clip-path: url(#a);
+      }
+
+      .c {
+        fill: #fff;
+      }
+
+      .d {
+        fill: #bd0034;
+      }
+
+      .e {
+        fill: #1a237b;
+      }
+    </style>
+    <clipPath id="a">
+      <rect class="a" width="128" height="74.6627"/>
+    </clipPath>
+  </defs>
+  <g class="b">
+    <rect class="c" width="128" height="74.6627"/>
+    <polygon class="d" points="85.706 26.994 128 3.318 128 0 125.084 0 76.86 26.994 85.706 26.994"/>
+    <polygon class="d" points="83.709 49.166 128 73.951 128 68.998 92.559 49.166 83.709 49.166"/>
+    <polygon class="d" points="0 5.683 37.888 26.994 46.741 26.994 0 0.726 0 5.683"/>
+    <polygon class="d" points="44.734 49.166 0 74.231 0 74.663 8.082 74.663 53.59 49.166 44.734 49.166"/>
+    <polygon class="e" points="119.24 0 74.424 0 74.424 25.098 119.24 0"/>
+    <polygon class="e" points="54.637 0 10 0 54.637 25.098 54.637 0"/>
+    <polygon class="e" points="128 26.994 128 9.866 97.598 26.994 128 26.994"/>
+    <polygon class="e" points="128 66.111 128 49.166 97.598 49.166 128 66.111"/>
+    <polygon class="e" points="12.532 74.663 54.637 74.663 54.637 51.069 12.532 74.663"/>
+    <polygon class="e" points="74.424 74.663 116.663 74.663 74.424 51.069 74.424 74.663"/>
+    <polygon class="e" points="0 49.166 0 66.875 31.46 49.166 0 49.166"/>
+    <polygon class="e" points="0 26.994 31.46 26.994 0 9.259 0 26.994"/>
+    <polygon class="d" points="58.596 0 58.596 31.43 0 31.43 0 44.741 58.596 44.741 58.596 74.663 70.466 74.663 70.466 44.741 128 44.741 128 31.43 70.466 31.43 70.466 0 58.596 0"/>
+  </g>
+</svg>
