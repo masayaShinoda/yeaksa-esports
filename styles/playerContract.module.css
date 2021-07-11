@@ -5,6 +5,12 @@
   max-width: 45vw;
 }
 
+@media (max-width: 1023px) {
+  .playerContractContainer {
+    max-width: 65vw;
+  }
+}
+
 @media (max-width: 480px) {
   .playerContractContainer {
     max-width: 90vw;

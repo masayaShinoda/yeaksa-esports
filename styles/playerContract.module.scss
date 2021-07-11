@@ -3,6 +3,11 @@
 .playerContractContainer {
     max-width: 45vw;
 }
+@media (max-width: $tablet-bp) {
+    .playerContractContainer {
+        max-width: 65vw;
+    }
+}
 @media (max-width: $mobile-bp) {
     .playerContractContainer {
         max-width: 90vw;
