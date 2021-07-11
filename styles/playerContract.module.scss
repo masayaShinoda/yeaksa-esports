@@ -1,0 +1,10 @@
+@import  "./_variables.scss";
+
+.playerContractContainer {
+    max-width: 45vw;
+}
+@media (max-width: $mobile-bp) {
+    .playerContractContainer {
+        max-width: 90vw;
+    }
+}
